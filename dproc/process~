@@ -1,0 +1,14 @@
+Image --> Duplicate
+Process --> Make Binary
+Edit --> Select None
+Process --> Binary --> Fill Holes
+Edit --> Selection --> Create Selection
+Select Original Image
+Edit --> Selection --> Restore Selection
+Analyze --> Tools --> ROI Manager --> Add
+More --> Split
+More --> Add Labels
+More --> Multi Measure -->
+Results --> Save As
+Results --> Select Several --> More --> MultiPlot --> Save As
+
