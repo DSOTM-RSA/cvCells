@@ -1,0 +1,20 @@
+function action(input, output, filename) {
+        open(input + filename);
+        run("Duplicate...", " ");
+        setOption("BlackBackground", false);
+		run("Make Binary");
+		run("Fill Holes");
+        makeRectangle(10, 10, 300, 180);
+        run("Crop");
+        saveAs("Jpeg", output + filename);
+        close();
+}
+
+input = "/home/dan/dproc/images/";
+output = "/home/dan/dproc/";
+
+setBatchMode(true); 
+list = getFileList(input);
+for (i = 0; i < list.length; i++)
+        action(input, output, list[i]);
+setBatchMode(false);
