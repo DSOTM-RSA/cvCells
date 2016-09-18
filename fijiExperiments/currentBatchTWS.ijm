@@ -4,7 +4,7 @@ function action(input, output, filename) {
         //run("Crop");
         call("trainableSegmentation.Weka_Segmentation.applyClassifier",
 input, filename, "showResults=true", 
-"storeResults=true", "probabilityMaps=false", "/Users/danny/Research/cvCells/dproc");
+"storeResults=true", "probabilityMaps=false", "/home/dan/Documents/GitArchive/cvCells/macro-tests-output/TWS");
 //call("trainableSegmentation.Weka_Segmentation.getResult");
         //saveAs("Jpeg", output + filename);
         //close();
@@ -13,8 +13,12 @@ input, filename, "showResults=true",
 
 // maybe set “showResults=false”
 
-input = "/Users/danny/Research/cvCells/dproc/images";
-output = "/Users/danny/Research/cvCells/dproc/images";
+
+//input = "/Users/danny/Research/cvCells/dproc/images";
+//output = "/Users/danny/Research/cvCells/dproc/images";
+
+input = "/home/dan/Documents/GitArchive/cvCells/dproc/8bits/sams";
+output = "/home/dan/Documents/GitArchive/cvCells/macro-tests-output/TWS";
 
 setBatchMode(true); 
 list = getFileList(input);

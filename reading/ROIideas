@@ -1,0 +1,10 @@
+nROIs = roiManager("count");
+print(nROIs);
+
+ n = roiManager("count"); 
+        for (i=0; i<n; i++)  { 
+        roiManager("select", i); 
+         run("Analyze Particles...", "size=2-infinity 
+circularity=0.00-1.00 show=Nothing display summarize"); 
+        
+}
