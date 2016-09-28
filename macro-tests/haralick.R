@@ -1,7 +1,6 @@
 format(Sys.time())
 
-em = readImage("embryos.tif")
-x = em[,,1]
+library(EBImage)
 
 em.grey = readImage("embryos-grey.tif")
 display(em.grey, title='Embryos Grey')
@@ -33,6 +32,9 @@ dis <- function(df,p,xw=50,yw=50){
 round(ft[6,2]-50,0)
 
 res<-dis(df=ft,p = 6)
+
+
+
 
 fts = computeFeatures.shape(em.bin.lab)
 fts
