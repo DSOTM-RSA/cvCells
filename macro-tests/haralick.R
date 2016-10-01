@@ -1,90 +1,86 @@
+# cvCells
+# Using shape and texture features to classfiy microscopy images
 
 
+# Part I - Data Management
 library(EBImage)
 
-bspp.grey <- readImage("01-g-bspp.tif")
-bspp.seg <- readImage("01-s-bspp.tif")
-bspp.seg.lab = bwlabel(bspp.seg)
+# basic book-keeping
+refs.all <- list.files(pattern = "*-g-bspp")
+segs.all <- list.files(pattern = "*-s-bspp")
 
-#compute all features and trim down to relative size features
-bspp.fts = computeFeatures(bspp.seg.lab,bspp.grey)
-ind = which(bspp.fts[,6]>=10000)
-bspp.fts.trim = bspp.fts[ind,]
+beg = 1
+end = as.numeric(length(refs.all))
 
-# compute texture
-bspp.har<-computeFeatures.haralick(bspp.seg.lab,bspp.grey)
-bspp.har.trim = bspp.har[ind,]
-
-obj1<-c(bspp.fts.trim,bspp.har.trim)
+# short labels for meta-data
+ref <- as.character(strsplit(refs.all,".tif"))
+seg <- as.character(strsplit(segs.all,".tif"))
 
 
 
-iacu.grey <- readImage("03-g-iacu.tif")
-iacu.seg <- readImage("03-s-iacu.tif")
-iacu.seg.lab = bwlabel(iacu.seg)
-
-display(iacu.seg.lab, title='Embryos Grey')
-
-#compute all features and trim down to relative size features
-iacu.fts = computeFeatures(iacu.seg.lab,iacu.grey)
-ind = which(iacu.fts[,6]>=10000)
-iacu.fts.trim = iacu.fts[ind,]
-
-# compute texture
-iacu.har<-computeFeatures.haralick(iacu.seg.lab,iacu.grey)
-iacu.har.trim = iacu.har[ind,]
-
-obj2<-c(iacu.fts.trim,iacu.har.trim)
-
-
-
-
-
-em.grey = readImage("embryos-grey.tif")
-display(em.grey, title='Embryos Grey')
-
-em.bin = readImage("embryos-bin.tif")
-display(em.bin, title='binary-segmented')
-
-
-em.bin.lab = bwlabel(em.bin)
-display(normalize(em.bin.lab), title='labelled image')
-
-z.colours = colorLabels(em.bin.lab)
-display(z.colours, title='colored segmentation')
-
-xx = em.grey[50:250,400:550]
-display(xx)
-
-dis <- function(df,p,xw=50,yw=50){
-  xmin <- round(df[p,1]-xw,0)
-  xmax <- round(df[p,1]+xw,0)
-  ymin <- round(df[p,2]-yw,0)
-  ymax <- round(df[p,2]+yw,0)
+# main loop
+for (i in beg:end){
   
-  plotter <- df[xmin:xmax,ymin:ymax]
-  return(plotter)
+  # read and label images
+  refs.array <-readImage(refs.all[i])
+  seg.array <-readImage(segs.all[i])
+  seg.labelled <-bwlabel(seg.array)
   
+  # contruct holder for feature-results
+  writer.1 <- paste0("shapes",i)
+  writer.2 <-paste0("textures",i)
+  
+  # compute features
+  fts.shp <- computeFeatures(seg.labelled,refs.array)
+  fts.tex <- computeFeatures.haralick(seg.labelled,refs.array)
+  #--->
+  # can trim here or outside loop
+  #crt = which(fts[,6]>=10000) # size criteria here
+  #fts.trim = fts[crt,]
+  #--->
+  
+  # assigning rownames here for completeness
+  rownames(fts.shp)<-rep(ref[i],dim(fts.shp)[1])
+  
+  # use assign for each feature set
+  assign(writer.1,fts.shp)
+  assign(writer.2,fts.tex)
+
 }
 
-round(ft[6,2]-50,0)
+# concenate pieces into one matrix
+rm(list=ls(pattern = "^fts"))
+pieces.shp <- Filter(function(x) is(x, "matrix"),mget(ls(pattern = "^shapes")))
+pieces.tex <- Filter(function(x) is(x, "matrix"), mget(ls(pattern= "^textures")))
 
-res<-dis(df=ft,p = 6)
-
-
-
-
-fts = computeFeatures.shape(em.bin.lab)
-fts
-
-ft = computeFeatures(em.bin.lab, em.grey, xname="nucleus")
-cat("median features are:\n")
-apply(ft, 2, median)
+# construct lists
+data.shapes<-do.call(rbind,pieces.shp)
+data.textures<-do.call(rbind,pieces.tex)
 
 
-fthar<-computeFeatures.haralick(em.bin.lab,em.grey)
+# trim data
+crt = which(data.shapes[,6]>=10000) # size criteria here
+data.shapes.trim = data.shapes[crt,] # apply to shape data
+data.textures.trim = data.textures[crt,] # apply for textures
+
+# bind rows for full array of features
+array.images<-cbind(data.shapes.trim,data.textures.trim)
+
+# write out feature matrix
+write.csv(array.images,file = "array.csv",row.names = TRUE)
 
 
-cols = c('black', sample(rainbow(max(y))))
-zrainbow = Image(cols[1+y], dim=dim(y))
-display(zrainbow, title='Cell nuclei (recolored)')
+# Part II - Model Creation
+library(stringr)
+library(magrittr)
+
+# to DF
+array.dfs <- as.data.frame(array.images)
+
+# create a column of image-names 
+rNames <- rownames(array.dfs)
+rNames.tag<- str_sub(rNames,-4)
+
+array.dfs %<>% cbind(rNames.tag,.)
+
+
