@@ -93,9 +93,23 @@ save(array.dfs,file="array.Rdata")
 
 # Part II - Model Creation
 
+library(FFTrees)
+
 # load in data-sets
 load("Array1.Rdata")
 load("array2.Rdata")
 join.df<-rbind(array.dfs,array.dfs.2)
+
+join.df$tagBinary <- 0
+join.df$tagBinary[join.df$rNames.tag == "iacu"] <- 1
+
+join.df.trim <- join.df[,-1]
+
+array.fft <- FFTrees(formula = tagBinary ~.,
+                        data = join.df.trim)
+
+plot(array.fft, 
+     main = "Dino FFT", 
+     decision.names = c("Bspp", "Iacu"))
 
 
