@@ -96,9 +96,9 @@ save(array.dfs,file="array.Rdata")
 library(FFTrees)
 
 # load in data-sets
-load("Array1.Rdata")
+load("array.Rdata")
 load("array2.Rdata")
-join.df<-rbind(array.dfs,array.dfs.2)
+join.df<-rbind(array.dfs,array.2.dfs)
 
 join.df$tagBinary <- 0
 join.df$tagBinary[join.df$rNames.tag == "iacu"] <- 1
@@ -111,5 +111,13 @@ array.fft <- FFTrees(formula = tagBinary ~.,
 plot(array.fft, 
      main = "Dino FFT", 
      decision.names = c("Bspp", "Iacu"))
+
+
+# function for bayesian classification
+x <- cbind(x1 = 3, x2 = c(4:1, 2:5))
+
+apply(x,2, function(x) exp(-(x[]-mean(x)+sd(x))^2/2*sd(x)))
+apply(x,2, function(x) exp(-(x[]-mean(x))^2/2*sd(x)))
+apply(x,2, function(x) exp(-(x[]-mean(x)-sd(x))^2/2*sd(x)))
 
 
