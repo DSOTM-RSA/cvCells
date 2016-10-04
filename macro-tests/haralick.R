@@ -121,3 +121,20 @@ apply(x,2, function(x) exp(-(x[]-mean(x))^2/2*sd(x)))
 apply(x,2, function(x) exp(-(x[]-mean(x)-sd(x))^2/2*sd(x)))
 
 
+library(caret)
+library(AppliedPredictiveModeling)
+
+# using untrimmed data: join.df
+transparentTheme(trans = .9)
+featurePlot(x = join.df[, 95:98], 
+            y = join.df$rNames.tag,
+            plot = "density", 
+            ## Pass in options to xyplot() to 
+            ## make it prettier
+            scales = list(x = list(relation="free"), 
+                          y = list(relation="free")), 
+            adjust = 1.5, 
+            pch = "|", 
+            layout = c(4, 1), 
+            auto.key = list(columns = 4))
+
