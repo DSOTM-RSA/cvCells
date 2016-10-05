@@ -80,11 +80,11 @@ rm(list = ls(pattern = "^textures"))
 library(stringr)
 library(magrittr)
 
-# to DF
+# to DF - change name here!!
 array.dfs <-as.data.frame(array.images)
 
 # create a column of image-names 
-rNames <-rownames(array.dfs)
+rNames <-rownames(array.iacu.dfs)
 rNames.tag <-str_sub(rNames,-4)
 
 array.dfs %<>% cbind(rNames.tag,.)
@@ -96,17 +96,19 @@ save(array.dfs,file="array.Rdata")
 library(FFTrees)
 
 # load in data-sets
-load("array.Rdata")
-load("array2.Rdata")
-join.df<-rbind(array.dfs,array.2.dfs)
+load("array-bspp.Rdata")
+load("array-iacu.Rdata")
+join.df<-rbind(array.bspp.dfs,array.iacu.dfs)
 
 join.df$tagBinary <- 0
 join.df$tagBinary[join.df$rNames.tag == "iacu"] <- 1
 
-join.df.trim <- join.df[,-1]
+#join.df.trim <- join.df[,-1]
 
 array.fft <- FFTrees(formula = tagBinary ~.,
-                        data = join.df.trim)
+                        data = join.df[,2:117])
+
+array.fft
 
 plot(array.fft, 
      main = "Dino FFT", 
@@ -126,7 +128,7 @@ library(AppliedPredictiveModeling)
 
 # using untrimmed data: join.df
 transparentTheme(trans = .9)
-featurePlot(x = join.df[, 95:98], 
+featurePlot(x = join.df[, 91:100], 
             y = join.df$rNames.tag,
             plot = "density", 
             ## Pass in options to xyplot() to 
@@ -135,6 +137,6 @@ featurePlot(x = join.df[, 95:98],
                           y = list(relation="free")), 
             adjust = 1.5, 
             pch = "|", 
-            layout = c(4, 1), 
-            auto.key = list(columns = 4))
+            layout = c(5, 2), 
+            auto.key = list(columns = 2))
 
