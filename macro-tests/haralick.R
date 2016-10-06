@@ -5,12 +5,12 @@
 # Part I - Data Management
 library(EBImage)
 
-# basic book-keeping -- list all files
-refs.all <-list.files(pattern = "*-g-bspp")
-segs.all <-list.files(pattern = "*-s-bspp")
+# species names here for dBase
+sp.sec<-"ipat"
 
-refs.all <-list.files(pattern = "*-g-iacu")
-segs.all <-list.files(pattern = "*-s-iacu")
+# basic book-keeping -- list all files
+refs.all <-list.files(pattern = paste0("*-g-",sp.sec))
+segs.all <-list.files(pattern = paste0("*-g-",sp.sec))
 
 beg = 1
 end = as.numeric(length(refs.all))
@@ -71,7 +71,7 @@ data.textures.trim <-data.textures[crt,] # apply for textures
 array.images <-cbind(data.shapes.trim,data.textures.trim)
 
 # write out feature matrix
-write.csv(array.images,file = "array.csv",row.names = TRUE)
+write.csv(array.images,file = paste0 ("array","-",sp.sec,".csv"),row.names = TRUE)
 
 rm(list = ls(pattern = "^shapes"))
 rm(list = ls(pattern = "^textures"))
@@ -81,38 +81,49 @@ library(stringr)
 library(magrittr)
 
 # to DF - change name here!!
-array.dfs <-as.data.frame(array.images)
+array.ipat.dfs <-as.data.frame(array.images)
 
 # create a column of image-names 
-rNames <-rownames(array.iacu.dfs)
+rNames <-rownames(array.ipat.dfs)
 rNames.tag <-str_sub(rNames,-4)
 
-array.dfs %<>% cbind(rNames.tag,.)
-save(array.dfs,file="array.Rdata")
+array.ipat.dfs %<>% cbind(rNames.tag,.)
+save(array.ipat.dfs,file="array-ipat.Rdata")
 
 
 # Part II - Model Creation
 
 library(FFTrees)
+library(dplyr)
+library(magrittr)
 
 # load in data-sets
 load("array-bspp.Rdata")
 load("array-iacu.Rdata")
-join.df<-rbind(array.bspp.dfs,array.iacu.dfs)
+load("array-snep.Rdata")
+load("array-squa.Rdata")
+load("array-ipat.Rdata")
+join.df<-rbind(array.bspp.dfs,array.iacu.dfs,array.snep.dfs,array.squa.dfs,array.ipat.dfs)
 
-join.df$tagBinary <- 0
-join.df$tagBinary[join.df$rNames.tag == "iacu"] <- 1
 
-#join.df.trim <- join.df[,-1]
+# make binary for simple 1:1 comparison
+sp.1<-"iacu"
+sp.2<-"ipat"
+
+join.df.bin <- join.df %>%  filter(.,rNames.tag == sp.1 | rNames.tag == sp.2)
+
+join.df.bin$tagBinary <- 0
+join.df.bin$tagBinary[join.df.bin$rNames.tag == sp.2] <- 1
+
 
 array.fft <- FFTrees(formula = tagBinary ~.,
-                        data = join.df[,2:117])
+                        data = join.df.bin[,2:117])
 
 array.fft
 
 plot(array.fft, 
      main = "Dino FFT", 
-     decision.names = c("Bspp", "Iacu"))
+     decision.names = c(sp.1, sp.2))
 
 
 # function for bayesian classification
@@ -127,6 +138,7 @@ library(caret)
 library(AppliedPredictiveModeling)
 
 # using untrimmed data: join.df
+  
 transparentTheme(trans = .9)
 featurePlot(x = join.df[, 91:100], 
             y = join.df$rNames.tag,
