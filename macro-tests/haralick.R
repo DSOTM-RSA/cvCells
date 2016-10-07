@@ -2,15 +2,21 @@
 # Using shape and texture features to classify microscopy images
 
 
-# Part I - Data Management
+# Part I - Data Management ----
+
+# load image processing lib
 library(EBImage)
 
-# species names here for dBase
-sp.sec<-"ipat"
+# species names here for individual dBase
+sp.sec<-"all"
 
 # basic book-keeping -- list all files
 refs.all <-list.files(pattern = paste0("*-g-",sp.sec))
 segs.all <-list.files(pattern = paste0("*-g-",sp.sec))
+
+# for all samples in library
+refs.all <-list.files(pattern = "*-g-")
+segs.all <-list.files(pattern = "*-s-")
 
 beg = 1
 end = as.numeric(length(refs.all))
@@ -37,13 +43,7 @@ for (i in beg:end){
   fts.shp <-computeFeatures(seg.labelled,refs.array)
   fts.tex <-computeFeatures.haralick(seg.labelled,refs.array)
   
-  #--->
-  # can trim here or outside loop
-  #crt = which(fts[,6]>=10000) # size criteria here
-  #fts.trim = fts[crt,]
-  #--->
-  
-  # assigning source file ids to rownames for completeness
+  # assigning source file ids to rownames for book-keeping
   rownames(fts.shp) <-rep(ref[i],dim(fts.shp)[1])
   
   # use assign for each feature set
@@ -70,78 +70,70 @@ data.textures.trim <-data.textures[crt,] # apply for textures
 # bind rows for full array of features
 array.images <-cbind(data.shapes.trim,data.textures.trim)
 
-# write out feature matrix
-write.csv(array.images,file = paste0 ("array","-",sp.sec,".csv"),row.names = TRUE)
+
+# Part II - Data Export ----
+
+# libs needed
+library(stringr)
+library(magrittr)
+
+# write out feature matrix to .csv
+write.csv(array.images,file = paste0("array","-",sp.sec,".csv"),row.names = TRUE)
 
 rm(list = ls(pattern = "^shapes"))
 rm(list = ls(pattern = "^textures"))
 
-# Write out data-sets
-library(stringr)
-library(magrittr)
-
 # to DF - change name here!!
-array.ipat.dfs <-as.data.frame(array.images)
+array.dfs <-as.data.frame(array.images)
 
 # create a column of image-names 
-rNames <-rownames(array.ipat.dfs)
+rNames <-rownames(array.dfs)
 rNames.tag <-str_sub(rNames,-4)
 
-array.ipat.dfs %<>% cbind(rNames.tag,.)
-save(array.ipat.dfs,file="array-ipat.Rdata")
+array.dfs %<>% cbind(rNames.tag,.) # bind to array
+save(array.dfs,file=paste0("array","-",sp.sec,".Rdata")) # export as .Rdata file
 
 
-# Part II - Model Creation
 
+# Part III - Model Creation ----
+
+# libs needed
 library(FFTrees)
 library(dplyr)
-library(magrittr)
+
 
 # load in data-sets
-load("array-bspp.Rdata")
-load("array-iacu.Rdata")
-load("array-snep.Rdata")
-load("array-squa.Rdata")
-load("array-ipat.Rdata")
-join.df<-rbind(array.bspp.dfs,array.iacu.dfs,array.snep.dfs,array.squa.dfs,array.ipat.dfs)
+load("array-all.Rdata")
 
+# Section A - Binary Classification
+sp.0<-"iacu" # assign species 0
+sp.1<-"ipat" # assign species 1
 
-# make binary for simple 1:1 comparison
-sp.1<-"iacu"
-sp.2<-"ipat"
+dat.bin <- array.dfs %>% filter(.,rNames.tag == sp.0 | rNames.tag == sp.1)
 
-join.df.bin <- join.df %>%  filter(.,rNames.tag == sp.1 | rNames.tag == sp.2)
+dat.bin$tagBinary <- 0
+dat.bin$tagBinary[dat.bin$rNames.tag == sp.1] <-1
 
-join.df.bin$tagBinary <- 0
-join.df.bin$tagBinary[join.df.bin$rNames.tag == sp.2] <- 1
+dat.bin.fft <- FFTrees(formula = tagBinary~.,
+                       data = dat.bin[,2:117]) # use all features outside label
 
+# print results
+dat.bin.fft
 
-array.fft <- FFTrees(formula = tagBinary ~.,
-                        data = join.df.bin[,2:117])
-
-array.fft
-
-plot(array.fft, 
+# plot tree
+plot(dat.bin.fft, 
      main = "Dino FFT", 
-     decision.names = c(sp.1, sp.2))
+     decision.names = c(sp.0, sp.1))
 
-
-# function for bayesian classification
-x <- cbind(x1 = 3, x2 = c(4:1, 2:5))
-
-apply(x,2, function(x) exp(-(x[]-mean(x)+sd(x))^2/2*sd(x)))
-apply(x,2, function(x) exp(-(x[]-mean(x))^2/2*sd(x)))
-apply(x,2, function(x) exp(-(x[]-mean(x)-sd(x))^2/2*sd(x)))
-
-
+# plotting some of parameters used
 library(caret)
 library(AppliedPredictiveModeling)
 
-# using untrimmed data: join.df
-  
+
+# featurePlot from caret  
 transparentTheme(trans = .9)
-featurePlot(x = join.df[, 91:100], 
-            y = join.df$rNames.tag,
+featurePlot(x = dat.bin[, 91:100], 
+            y = dat.bin$rNames.tag,
             plot = "density", 
             ## Pass in options to xyplot() to 
             ## make it prettier
@@ -149,6 +141,6 @@ featurePlot(x = join.df[, 91:100],
                           y = list(relation="free")), 
             adjust = 1.5, 
             pch = "|", 
-            layout = c(5, 2), 
-            auto.key = list(columns = 2))
+            layout = c(5, 2),auto.key = list(columns = 2))
+
 
