@@ -2,15 +2,21 @@
 # Using shape and texture features to classify microscopy images
 
 
-# Part I - Data Management
+# Part I - Data Management ----
+
+# load image processing lib
 library(EBImage)
 
-# basic book-keeping -- list all files
-refs.all <-list.files(pattern = "*-g-bspp")
-segs.all <-list.files(pattern = "*-s-bspp")
+# species names here for individual dBase
+sp.sec<-"all"
 
-refs.all <-list.files(pattern = "*-g-iacu")
-segs.all <-list.files(pattern = "*-s-iacu")
+# basic book-keeping -- list all files
+refs.all <-list.files(pattern = paste0("*-g-",sp.sec))
+segs.all <-list.files(pattern = paste0("*-g-",sp.sec))
+
+# for all samples in library
+refs.all <-list.files(pattern = "*-g-")
+segs.all <-list.files(pattern = "*-s-")
 
 beg = 1
 end = as.numeric(length(refs.all))
@@ -37,13 +43,7 @@ for (i in beg:end){
   fts.shp <-computeFeatures(seg.labelled,refs.array)
   fts.tex <-computeFeatures.haralick(seg.labelled,refs.array)
   
-  #--->
-  # can trim here or outside loop
-  #crt = which(fts[,6]>=10000) # size criteria here
-  #fts.trim = fts[crt,]
-  #--->
-  
-  # assigning source file ids to rownames for completeness
+  # assigning source file ids to rownames for book-keeping
   rownames(fts.shp) <-rep(ref[i],dim(fts.shp)[1])
   
   # use assign for each feature set
@@ -70,54 +70,77 @@ data.textures.trim <-data.textures[crt,] # apply for textures
 # bind rows for full array of features
 array.images <-cbind(data.shapes.trim,data.textures.trim)
 
-# write out feature matrix
-write.csv(array.images,file = "array.csv",row.names = TRUE)
+
+# Part II - Data Export ----
+
+# libs needed
+library(stringr)
+library(magrittr)
+
+# write out feature matrix to .csv
+write.csv(array.images,file = paste0("array","-",sp.sec,".csv"),row.names = TRUE)
 
 rm(list = ls(pattern = "^shapes"))
 rm(list = ls(pattern = "^textures"))
 
-# Write out data-sets
-library(stringr)
-library(magrittr)
-
-# to DF
+# to DF - change name here!!
 array.dfs <-as.data.frame(array.images)
 
 # create a column of image-names 
 rNames <-rownames(array.dfs)
 rNames.tag <-str_sub(rNames,-4)
 
-array.dfs %<>% cbind(rNames.tag,.)
-save(array.dfs,file="array.Rdata")
+array.dfs %<>% cbind(rNames.tag,.) # bind to array
+save(array.dfs,file=paste0("array","-",sp.sec,".Rdata")) # export as .Rdata file
 
 
-# Part II - Model Creation
 
+# Part III - Model Creation ----
+
+# libs needed
 library(FFTrees)
+library(dplyr)
+
 
 # load in data-sets
-load("array.Rdata")
-load("array2.Rdata")
-join.df<-rbind(array.dfs,array.2.dfs)
+load("array-all.Rdata")
 
-join.df$tagBinary <- 0
-join.df$tagBinary[join.df$rNames.tag == "iacu"] <- 1
+# Section A - Binary Classification
+sp.0<-"iacu" # assign species 0
+sp.1<-"ipat" # assign species 1
 
-join.df.trim <- join.df[,-1]
+dat.bin <- array.dfs %>% filter(.,rNames.tag == sp.0 | rNames.tag == sp.1)
 
-array.fft <- FFTrees(formula = tagBinary ~.,
-                        data = join.df.trim)
+dat.bin$tagBinary <- 0
+dat.bin$tagBinary[dat.bin$rNames.tag == sp.1] <-1
 
-plot(array.fft, 
+dat.bin.fft <- FFTrees(formula = tagBinary~.,
+                       data = dat.bin[,2:117]) # use all features outside label
+
+# print results
+dat.bin.fft
+
+# plot tree
+plot(dat.bin.fft, 
      main = "Dino FFT", 
-     decision.names = c("Bspp", "Iacu"))
+     decision.names = c(sp.0, sp.1))
+
+# plotting some of parameters used
+library(caret)
+library(AppliedPredictiveModeling)
 
 
-# function for bayesian classification
-x <- cbind(x1 = 3, x2 = c(4:1, 2:5))
-
-apply(x,2, function(x) exp(-(x[]-mean(x)+sd(x))^2/2*sd(x)))
-apply(x,2, function(x) exp(-(x[]-mean(x))^2/2*sd(x)))
-apply(x,2, function(x) exp(-(x[]-mean(x)-sd(x))^2/2*sd(x)))
+# featurePlot from caret  
+transparentTheme(trans = .9)
+featurePlot(x = dat.bin[, 91:100], 
+            y = dat.bin$rNames.tag,
+            plot = "density", 
+            ## Pass in options to xyplot() to 
+            ## make it prettier
+            scales = list(x = list(relation="free"), 
+                          y = list(relation="free")), 
+            adjust = 1.5, 
+            pch = "|", 
+            layout = c(5, 2),auto.key = list(columns = 2))
 
 
