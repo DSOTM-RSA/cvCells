@@ -102,6 +102,7 @@ library(FFTrees)
 library(dplyr)
 
 
+
 # load in data-sets
 load("array-all.Rdata")
 
@@ -114,14 +115,18 @@ dat.bin <- array.dfs %>% filter(.,rNames.tag == sp.0 | rNames.tag == sp.1)
 dat.bin$tagBinary <- 0
 dat.bin$tagBinary[dat.bin$rNames.tag == sp.1] <-1
 
-dat.bin.fft <- FFTrees(formula = tagBinary~.,
-                       data = dat.bin[,2:117]) # use all features outside label
+
+dat.bin.fft.mar <- FFTrees(formula = tagBinary~.,
+                       data = dat.bin[,2:117],rank.method = "m") # use all features outside label
+
+#dat.bin.fft.con <- FFTrees(formula = tagBinary~.,
+#                           data = dat.bin[,2:117],rank.method = "c") # use all features outside label
 
 # print results
-dat.bin.fft
+dat.bin.fft.mar
 
 # plot tree
-plot(dat.bin.fft, 
+plot(dat.bin.fft.mar, 
      main = "Dino FFT", 
      decision.names = c(sp.0, sp.1))
 
@@ -144,3 +149,21 @@ featurePlot(x = dat.bin[, 91:100],
             layout = c(5, 2),auto.key = list(columns = 2))
 
 
+
+# Section B - Multiclass Classification
+
+library(caret)
+load("array-all.Rdata")
+
+
+# indentifying correlated parameters (i.e not PLS)
+descrCor <- cor(array.dfs[-1])
+highlyCorDescr <- findCorrelation(descrCor, cutoff = .85)
+filteredDescr <- descr[,-highlyCorDescr]
+
+
+# or preProcessing (scaling and centering)
+pp_outp <- preProcess(filteredDescr, 
+                     method = c("center", "scale", "YeoJohnson"))
+
+transformed <- predict(pp_outp, newdata = filteredDescr) # actual transformation happens here
