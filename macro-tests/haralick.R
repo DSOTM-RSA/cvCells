@@ -77,9 +77,6 @@ array.images <-cbind(data.shapes.trim,data.textures.trim)
 library(stringr)
 library(magrittr)
 
-# write out feature matrix to .csv
-write.csv(array.images,file = paste0("array","-",sp.sec,".csv"),row.names = TRUE)
-
 rm(list = ls(pattern = "^shapes"))
 rm(list = ls(pattern = "^textures"))
 
@@ -92,7 +89,7 @@ rNames.tag <-str_sub(rNames,-4)
 
 array.dfs %<>% cbind(rNames.tag,.) # bind to array
 save(array.dfs,file=paste0("array","-",sp.sec,".Rdata")) # export as .Rdata file
-
+write.csv(array.dfs,file = paste0("array","-",sp.sec,".csv"),row.names = FALSE) # write out feature matrix to .csv
 
 
 # Part III - Model Creation ----
@@ -106,7 +103,7 @@ library(dplyr)
 # load in data-sets
 load("array-all.Rdata")
 
-# Section A - Binary Classification
+library(sparklyr)# Section A - Binary Classification
 sp.0<-"iacu" # assign species 0
 sp.1<-"ipat" # assign species 1
 
@@ -167,3 +164,69 @@ pp_outp <- preProcess(filteredDescr,
                      method = c("center", "scale", "YeoJohnson"))
 
 transformed <- predict(pp_outp, newdata = filteredDescr) # actual transformation happens here
+
+
+# sparklyr
+library(sparklyr)
+spark_install(version = "1.6.2")
+
+sc <- spark_connect(master = "local")
+accidents <- spark_read_csv(sc, name = 'accidents', path = '~/Research/cvCells/macro-tests/in-grey-seg/array-all.csv')
+
+# fit linear model
+partitions <- accidents %>%
+  sdf_partition(training = 0.75, test = 0.25, seed = 1099)
+
+fit <- partitions$training %>%
+  ml_linear_regression(response = "x_0_s_area", features = c("x_0_s_perimeter", "x_0_s_area"))
+
+summary(fit)
+
+
+# kmeans test
+kmeans_model <- accidents %>%
+  select(x_0_s_area, x_0_m_majoraxis) %>%
+  ml_kmeans(centers = 3)
+
+print(kmeans_model)
+
+# predict the associated class
+predicted <- sdf_predict(kmeans_model, accidents) %>%
+  collect
+table(predicted$rNames_tag, predicted$prediction)
+
+library(ggplot2)
+sdf_predict(kmeans_model) %>%
+  collect() %>%
+  ggplot(aes(x_0_s_area, x_0_m_majoraxis)) +
+  geom_point(aes(x_0_m_majoraxis, x_0_s_area, col = factor(prediction + 1)),
+             size = 2, alpha = 0.5) + 
+  geom_point(data = kmeans_model$centers, aes(x_0_m_majoraxis, x_0_s_area),
+             col = scales::muted(c("red", "green", "blue")),
+             pch = 'x', size = 12) +
+  scale_color_discrete(name = "Predicted Cluster",
+                       labels = paste("Cluster", 1:3)) +
+  labs(
+    x = "x_0_m_majoraxis",
+    y = "x_0_s_area",
+    title = "K-Means Clustering",
+    subtitle = "Use Spark.ML to predict cluster membership with this dataset."
+  )
+
+
+# rf model
+rf_model <- accidents %>%
+  ml_random_forest(rNames_tag ~ x_0_s_area + x_0_m_majoraxis, type = "classification")
+
+rf_predict <- sdf_predict(rf_model, accidents) %>%
+  ft_string_indexer("rNames_tag", "rNames_idx") %>%
+  collect
+
+table(rf_predict$rNames_idx, rf_predict$prediction)
+
+ft_string2idx <- accidents %>%
+  ft_string_indexer("rNames_tag", "rNames_idx") %>%
+  ft_index_to_string("rNames_idx", "rNames_remap") %>%
+  collect
+
+table(ft_string2idx$rNames_idx,ft_string2idx$rNames_remap) # show mapping
