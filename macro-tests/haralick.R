@@ -147,51 +147,52 @@ featurePlot(x = dat.bin[, 91:100],
 
 
 
-# Section B - Multiclass Classification
+# Section B - Multiclass: preProcessing in caret, models in Spark
 
 library(caret)
 load("array-all.Rdata")
 
 
-# indentifying correlated parameters (i.e not PLS)
-descrCor <- cor(array.dfs[-1])
-highlyCorDescr <- findCorrelation(descrCor, cutoff = .85)
-filteredDescr <- descr[,-highlyCorDescr]
+# indentifying correlated parameters (i.e not for PLS)
+feats <- array.dfs[-1]
+descrCor <- cor(feats)
+highlyCorDescr <- findCorrelation(descrCor, cutoff = .95)
+filteredDescr <- feats[,-highlyCorDescr]
+array-all-trim<-cbind(array.dfs[1],filteredDescr)
+
+write.csv(array.all.trim,file = "array-all-trim.csv",row.names = FALSE) # write out feature matrix to .csv
+
+rm(array.dfs,feats,descrCor,highlyCorDescr,filteredDescr,array-all.trim) #clean up
 
 
-# or preProcessing (scaling and centering)
-pp_outp <- preProcess(filteredDescr, 
-                     method = c("center", "scale", "YeoJohnson"))
-
-transformed <- predict(pp_outp, newdata = filteredDescr) # actual transformation happens here
-
-
+##################
 # sparklyr
+library(dplyr)
 library(sparklyr)
-spark_install(version = "1.6.2")
 
+# connect to instance
 sc <- spark_connect(master = "local")
-accidents <- spark_read_csv(sc, name = 'accidents', path = '~/Research/cvCells/macro-tests/in-grey-seg/array-all.csv')
+features_tbl <- spark_read_csv(sc, name = 'featLib', path = '~/Research/cvCells/macro-tests/in-grey-seg/array-all-trim.csv')
 
 # fit linear model
-partitions <- accidents %>%
+partitions <- features_tbl %>%
   sdf_partition(training = 0.75, test = 0.25, seed = 1099)
 
 fit <- partitions$training %>%
-  ml_linear_regression(response = "x_0_s_area", features = c("x_0_s_perimeter", "x_0_s_area"))
+  ml_linear_regression(response = "x_0_s_area", features = c("x_0_s_perimeter", "x_0_m_majoraxis"))
 
 summary(fit)
 
 
 # kmeans test
-kmeans_model <- accidents %>%
+kmeans_model <- features_tbl %>%
   select(x_0_s_area, x_0_m_majoraxis) %>%
   ml_kmeans(centers = 3)
 
 print(kmeans_model)
 
 # predict the associated class
-predicted <- sdf_predict(kmeans_model, accidents) %>%
+predicted <- sdf_predict(kmeans_model, features_tbl) %>%
   collect
 table(predicted$rNames_tag, predicted$prediction)
 
@@ -215,16 +216,17 @@ sdf_predict(kmeans_model) %>%
 
 
 # rf model
-rf_model <- accidents %>%
+rf_model <- features_tbl %>%
   ml_random_forest(rNames_tag ~ x_0_s_area + x_0_m_majoraxis, type = "classification")
 
-rf_predict <- sdf_predict(rf_model, accidents) %>%
+rf_predict <- sdf_predict(rf_model, features_tbl) %>%
   ft_string_indexer("rNames_tag", "rNames_idx") %>%
   collect
 
+# print the classification results
 table(rf_predict$rNames_idx, rf_predict$prediction)
 
-ft_string2idx <- accidents %>%
+ft_string2idx <- features_tbl %>%
   ft_string_indexer("rNames_tag", "rNames_idx") %>%
   ft_index_to_string("rNames_idx", "rNames_remap") %>%
   collect
