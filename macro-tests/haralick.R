@@ -158,11 +158,11 @@ feats <- array.dfs[-1]
 descrCor <- cor(feats)
 highlyCorDescr <- findCorrelation(descrCor, cutoff = .95)
 filteredDescr <- feats[,-highlyCorDescr]
-array-all-trim<-cbind(array.dfs[1],filteredDescr)
+array.all.trim<-cbind(array.dfs[1],filteredDescr)
 
-write.csv(array.all.trim,file = "array-all-trim.csv",row.names = FALSE) # write out feature matrix to .csv
+write.csv(array.all.trim,file = "array.all.trim.csv",row.names = FALSE) # write out feature matrix to .csv
 
-rm(array.dfs,feats,descrCor,highlyCorDescr,filteredDescr,array-all.trim) #clean up
+rm(array.dfs,feats,descrCor,highlyCorDescr,filteredDescr,array.all.trim) #clean up
 
 
 ##################
@@ -172,7 +172,7 @@ library(sparklyr)
 
 # connect to instance
 sc <- spark_connect(master = "local")
-features_tbl <- spark_read_csv(sc, name = 'featLib', path = '~/Research/cvCells/macro-tests/in-grey-seg/array-all-trim.csv')
+features_tbl <- spark_read_csv(sc, name = 'featLib', path = '~/Research/cvCells/macro-tests/in-grey-seg/array.all.trim.csv')
 
 # fit linear model
 partitions <- features_tbl %>%
