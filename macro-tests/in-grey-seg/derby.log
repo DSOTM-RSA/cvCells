@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Tue Oct 18 09:53:58 CEST 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0157-d6c8-5f2b-00002d399cf8 
-on database directory memory:/Users/danny/Research/cvCells/macro-tests/in-grey-seg/databaseName=metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@23261543 
+Wed Oct 19 10:19:54 CEST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0157-dc06-7867-00002c778f70 
+on database directory memory:/Users/danny/Research/cvCells/macro-tests/in-grey-seg/databaseName=metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@2110c53b 
 Loaded from file:/Users/danny/Library/Caches/spark/spark-1.6.2-bin-hadoop2.6/lib/spark-assembly-1.6.2-hadoop2.6.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_65-b17

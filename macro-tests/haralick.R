@@ -215,20 +215,6 @@ sdf_predict(kmeans_model) %>%
   )
 
 
-# rf model
-rf_model <- features_tbl %>%
-  ml_random_forest(rNames_tag ~ x_0_s_area + x_0_m_majoraxis, type = "classification")
 
-rf_predict <- sdf_predict(rf_model, features_tbl) %>%
-  ft_string_indexer("rNames_tag", "rNames_idx") %>%
-  collect
 
-# print the classification results
-table(rf_predict$rNames_idx, rf_predict$prediction)
 
-ft_string2idx <- features_tbl %>%
-  ft_string_indexer("rNames_tag", "rNames_idx") %>%
-  ft_index_to_string("rNames_idx", "rNames_remap") %>%
-  collect
-
-table(ft_string2idx$rNames_idx,ft_string2idx$rNames_remap) # show mapping
