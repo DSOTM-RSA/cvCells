@@ -92,7 +92,7 @@ save(array.dfs,file=paste0("array","-",sp.sec,".Rdata")) # export as .Rdata file
 write.csv(array.dfs,file = paste0("array","-",sp.sec,".csv"),row.names = FALSE) # write out feature matrix to .csv
 
 
-# Part III - Model Creation ----
+# Old - Binary Checks using FFT (slow!) ----
 
 # libs needed
 library(FFTrees)
@@ -103,7 +103,6 @@ library(dplyr)
 # load in data-sets
 load("array-all.Rdata")
 
-library(sparklyr)# Section A - Binary Classification
 sp.0<-"iacu" # assign species 0
 sp.1<-"ipat" # assign species 1
 
@@ -147,26 +146,11 @@ featurePlot(x = dat.bin[, 91:100],
 
 
 
-# Section B - Multiclass: preProcessing in caret, models in Spark
 
-library(caret)
-load("array-all.Rdata")
-
-
-# indentifying correlated parameters (i.e not for PLS)
-feats <- array.dfs[-1]
-descrCor <- cor(feats)
-highlyCorDescr <- findCorrelation(descrCor, cutoff = .95)
-filteredDescr <- feats[,-highlyCorDescr]
-array.all.trim<-cbind(array.dfs[1],filteredDescr)
-
-write.csv(array.all.trim,file = "array.all.trim.csv",row.names = FALSE) # write out feature matrix to .csv
-
-rm(array.dfs,feats,descrCor,highlyCorDescr,filteredDescr,array.all.trim) #clean up
 
 
 ##################
-# sparklyr
+# sparklyr demo - not used!
 library(dplyr)
 library(sparklyr)
 

@@ -1,3 +1,19 @@
+# preProcess - Multiclass: preProcessing in caret
+
+library(caret)
+load("array-all.Rdata")
+
+# indentifying correlated parameters (i.e not for PLS)
+feats <- array.dfs[-1]
+descrCor <- cor(feats)
+highlyCorDescr <- findCorrelation(descrCor, cutoff = .95)
+filteredDescr <- feats[,-highlyCorDescr]
+array.all.trim<-cbind(array.dfs[1],filteredDescr)
+
+write.csv(array.all.trim,file = "array.all.trim.csv",row.names = FALSE) # write out feature matrix to .csv
+
+rm(array.dfs,feats,descrCor,highlyCorDescr,filteredDescr,array.all.trim) #clean up
+
 
 # Part One: Using Spark ML ----
 
