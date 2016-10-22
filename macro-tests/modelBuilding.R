@@ -18,14 +18,19 @@ rm(array.dfs,feats,descrCor,highlyCorDescr,filteredDescr,array.all.trim) #clean 
 # Part One: Using Spark ML ----
 
 # load libraries
-library(dplyr)
-library(sparklyr)
+library(sparklyr) # first for linux: may have to move pre-process
+sc <- spark_connect(master = "local") # connect to spark instance
 
-# connect to spark instance
-sc <- spark_connect(master = "local")
+library(dplyr)
+
 
 # load feature data-set (trimmed un-correlate feats)
+
+# TODO: function to determine which system I'm on and set for read path 
+
 features_tbl <- spark_read_csv(sc, name = 'featLib', path = '~/Research/cvCells/macro-tests/in-grey-seg/array.all.trim.csv')
+features_tbl <- spark_read_csv(sc, name = 'featLib', path = "~/Documents/GitArchive/cvCells/macro-tests/in-grey-seg/array.all.trim.csv")
+
 
 # building a full random forest
 rf_full_model <- features_tbl %>% 

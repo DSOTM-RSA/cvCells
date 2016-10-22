@@ -1,7 +1,6 @@
 # cvCells
 # Using shape and texture features to classify microscopy images
 
-
 # Part I - Data Management ----
 
 # load image processing lib
@@ -63,7 +62,7 @@ data.textures <-do.call(rbind,pieces.tex)
 
 
 # trim data
-crt <-which(data.shapes[,6]>=10000) # size criteria here
+crt <-which(data.shapes[,6]>=7500) # size criteria here
 data.shapes.trim <-data.shapes[crt,] # apply to shape data
 data.textures.trim <-data.textures[crt,] # apply for textures
 

@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Wed Oct 19 10:19:54 CEST 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0157-dc06-7867-00002c778f70 
-on database directory memory:/Users/danny/Research/cvCells/macro-tests/in-grey-seg/databaseName=metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@2110c53b 
-Loaded from file:/Users/danny/Library/Caches/spark/spark-1.6.2-bin-hadoop2.6/lib/spark-assembly-1.6.2-hadoop2.6.0.jar
+Sat Oct 22 12:51:37 CEST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0157-ec04-7358-00002db64600 
+on database directory memory:/home/dan/Documents/GitArchive/cvCells/macro-tests/in-grey-seg/databaseName=metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@1c7b9941 
+Loaded from file:/home/dan/.cache/spark/spark-1.6.2-bin-hadoop2.6/lib/spark-assembly-1.6.2-hadoop2.6.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_65-b17
-user.dir=/Users/danny/Research/cvCells/macro-tests/in-grey-seg
-os.name=Mac OS X
-os.arch=x86_64
-os.version=10.10.5
+java.runtime.version=1.8.0_77-b03
+user.dir=/home/dan/Documents/GitArchive/cvCells/macro-tests/in-grey-seg
+os.name=Linux
+os.arch=amd64
+os.version=4.4.0-43-generic
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
