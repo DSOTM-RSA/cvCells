@@ -1,0 +1,1151 @@
+10-28 11:37:08.447 127.0.0.1:54321       19935  #r thread INFO: ----- H2O started  -----
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Build git branch: rel-turing
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Build git hash: 3b286dea7b719b6ef2c2f5f7728648f2440a1502
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Build git describe: jenkins-rel-turing-6
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Build project version: 3.10.0.6 (latest version: 3.10.0.9)
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Build age: 2 months and 2 days
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Built by: 'jenkins'
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Built on: '2016-08-26 11:15:18'
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Processed H2O arguments: [-name, sparkling-water-danny_1482173193, -ga_opt_out, -log_level, INFO, -baseport, 54321, -ip, localhost, -log_dir, /Users/danny/Research/cvCells/macro-tests/in-grey-seg/h2ologs]
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Java availableProcessors: 4
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Java heap totalMemory: 984.5 MB
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Java heap maxMemory: 984.5 MB
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Java version: Java 1.8.0_65 (from Oracle Corporation)
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: JVM launch parameters: [-Xms1g, -Xmx1g]
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: OS version: Mac OS X 10.10.5 (x86_64)
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: Machine physical memory: 8.00 GB
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: X-h2o-cluster-id: 1477647427014
+10-28 11:37:08.457 127.0.0.1:54321       19935  #r thread INFO: User name: 'danny'
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Opted out of sending usage metrics.
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: IPv6 stack selected: false
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Possible IP Address: en0 (en0), fe80:0:0:0:6a5b:35ff:fea0:cef4%en0
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Possible IP Address: en0 (en0), 10.111.36.81
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Possible IP Address: lo0 (lo0), fe80:0:0:0:0:0:0:1%lo0
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Possible IP Address: lo0 (lo0), 0:0:0:0:0:0:0:1
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Possible IP Address: lo0 (lo0), 127.0.0.1
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Internal communication uses port: 54322
+10-28 11:37:08.458 127.0.0.1:54321       19935  #r thread INFO: Listening for HTTP and REST traffic on http://127.0.0.1:54321/
+10-28 11:37:08.476 127.0.0.1:54321       19935  #r thread INFO: H2O cloud name: 'sparkling-water-danny_1482173193' on localhost/127.0.0.1:54321, discovery address /237.73.235.110:60745
+10-28 11:37:08.476 127.0.0.1:54321       19935  #r thread INFO: If you have trouble connecting, try SSH tunneling from your local machine (e.g., via port 55555):
+10-28 11:37:08.476 127.0.0.1:54321       19935  #r thread INFO:   1. Open a terminal and run 'ssh -L 55555:localhost:54321 danny@127.0.0.1'
+10-28 11:37:08.476 127.0.0.1:54321       19935  #r thread INFO:   2. Point your browser to http://localhost:55555
+10-28 11:37:08.476 127.0.0.1:54321       19935  #r thread INFO: Log dir: '/Users/danny/Research/cvCells/macro-tests/in-grey-seg/h2ologs'
+10-28 11:37:08.476 127.0.0.1:54321       19935  #r thread INFO: Cur dir: '/Users/danny/Research/cvCells/macro-tests/in-grey-seg'
+10-28 11:37:08.489 127.0.0.1:54321       19935  #r thread INFO: HDFS subsystem successfully initialized
+10-28 11:37:08.494 127.0.0.1:54321       19935  #r thread INFO: S3 subsystem successfully initialized
+10-28 11:37:08.494 127.0.0.1:54321       19935  #r thread INFO: Flow dir: '/Users/danny/h2oflows'
+10-28 11:37:08.507 127.0.0.1:54321       19935  #r thread INFO: Cloud of size 1 formed [localhost/127.0.0.1:54321]
+10-28 11:37:08.556 127.0.0.1:54321       19935  #r thread INFO: Registered parsers: [GUESS, ARFF, XLS, SVMLight, AVRO, CSV]
+10-28 11:37:08.556 127.0.0.1:54321       19935  #r thread INFO: Registered 0 extensions in: 609mS
+10-28 11:37:09.263 127.0.0.1:54321       19935  #r thread INFO: Registered: 128 REST APIs in: 707mS
+10-28 11:37:09.264 127.0.0.1:54321       19935  #r thread INFO: 
+10-28 11:37:09.264 127.0.0.1:54321       19935  #r thread INFO: Open H2O Flow in your web browser: http://127.0.0.1:54321
+10-28 11:37:09.264 127.0.0.1:54321       19935  #r thread INFO: 
+10-28 11:37:15.007 127.0.0.1:54321       19935  #roup-2-2 INFO: Registered: 204 schemas in 680ms
+10-28 11:37:15.131 127.0.0.1:54321       19935  #4490-192 INFO: GET /, parms: {}
+10-28 11:37:15.141 127.0.0.1:54321       19935  #4490-193 INFO: GET /, parms: {}
+10-28 11:37:15.218 127.0.0.1:54321       19935  #4490-195 INFO: GET /3/InitID, parms: {}
+10-28 11:37:15.219 127.0.0.1:54321       19935  #4490-195 INFO: Locking cloud to new members, because water.api.schemas3.InitIDV3
+10-28 11:37:15.459 127.0.0.1:54321       19935  #4490-197 INFO: GET /3/Frames/frame_rdd_39, parms: {row_count=10}
+10-28 11:38:03.447 127.0.0.1:54321       19935  #4490-198 INFO: GET /, parms: {}
+10-28 11:38:03.460 127.0.0.1:54321       19935  #4490-192 INFO: GET /, parms: {}
+10-28 11:38:03.472 127.0.0.1:54321       19935  #4490-194 INFO: GET /3/InitID, parms: {}
+10-28 11:38:03.661 127.0.0.1:54321       19935  #4490-196 INFO: GET /3/Frames/frame_rdd_46, parms: {row_count=10}
+10-28 11:38:15.696 127.0.0.1:54321       19935  #4490-197 INFO: GET /, parms: {}
+10-28 11:38:15.702 127.0.0.1:54321       19935  #4490-198 INFO: GET /, parms: {}
+10-28 11:38:15.714 127.0.0.1:54321       19935  #4490-193 INFO: GET /3/InitID, parms: {}
+10-28 11:38:15.789 127.0.0.1:54321       19935  #4490-195 INFO: GET /3/Frames/frame_rdd_51, parms: {row_count=10}
+10-28 11:39:45.431 127.0.0.1:54321       19935  #4490-197 INFO: GET /3/ModelBuilders/kmeans, parms: {}
+10-28 11:39:45.575 127.0.0.1:54321       19935  #4490-192 INFO: POST /3/ModelBuilders/kmeans, parms: {seed=1, k=3, training_frame=frame_rdd_46, ignored_columns=["rNames_tag"]}
+10-28 11:39:45.670 127.0.0.1:54321       19935  FJ-1-7    INFO: Building H2O KMeans model with these parameters:
+10-28 11:39:45.683 127.0.0.1:54321       19935  FJ-1-7    INFO: {"_train":{"name":"frame_rdd_46","type":"Key"},"_valid":null,"_nfolds":0,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":1,"_fold_assignment":"AUTO","_categorical_encoding":"AUTO","_distribution":"AUTO","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":["rNames_tag"],"_ignore_const_cols":true,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":0,"_stopping_metric":"AUTO","_stopping_tolerance":0.001,"_response_column":null,"_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_k":3,"_max_iterations":1000,"_standardize":true,"_init":"Furthest","_user_points":null,"_pred_indicator":false}
+10-28 11:39:45.684 127.0.0.1:54321       19935  FJ-1-7    INFO: Dropping ignored columns: [rNames_tag]
+10-28 11:39:46.207 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Summary:
+10-28 11:39:46.207 127.0.0.1:54321       19935  FJ-1-7    INFO:   Number of Rows  Number of Clusters  Number of Categorical Columns  Number of Iterations  Within Cluster Sum of Squares  Total Sum of Squares  Between Cluster Sum of Squares
+10-28 11:39:46.207 127.0.0.1:54321       19935  FJ-1-7    INFO:               79                   3                              0                     5                     1378.32175            2340.00000                       961.67825
+10-28 11:39:46.778 127.0.0.1:54321       19935  #4490-196 INFO: GET /3/Models/KMeans_model_R_1477647427014_1, parms: {}
+10-28 11:41:15.956 127.0.0.1:54321       19935  #4490-198 INFO: GET /3/ModelBuilders/pca, parms: {}
+10-28 11:41:16.010 127.0.0.1:54321       19935  #4490-193 INFO: POST /3/ModelBuilders/pca, parms: {seed=1, k=4, training_frame=frame_rdd_46, ignored_columns=["rNames_tag"]}
+10-28 11:41:16.029 127.0.0.1:54321       19935  FJ-1-5    INFO: Building H2O PCA model with these parameters:
+10-28 11:41:16.036 127.0.0.1:54321       19935  FJ-1-5    INFO: {"_train":{"name":"frame_rdd_46","type":"Key"},"_valid":null,"_nfolds":0,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":1,"_fold_assignment":"AUTO","_categorical_encoding":"AUTO","_distribution":"AUTO","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":["rNames_tag"],"_ignore_const_cols":true,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":0,"_stopping_metric":"AUTO","_stopping_tolerance":0.001,"_response_column":null,"_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_transform":"NONE","_pca_method":"GramSVD","_k":4,"_max_iterations":1000,"_use_all_factor_levels":false,"_compute_metrics":true,"_impute_missing":false}
+10-28 11:41:16.036 127.0.0.1:54321       19935  FJ-1-5    INFO: Dropping ignored columns: [rNames_tag]
+10-28 11:41:17.101 127.0.0.1:54321       19935  #4490-197 INFO: GET /3/Models/PCA_model_R_1477647427014_2, parms: {}
+10-28 11:43:00.937 127.0.0.1:54321       19935  #4490-198 INFO: GET /, parms: {}
+10-28 11:43:00.962 127.0.0.1:54321       19935  #4490-192 INFO: GET /, parms: {}
+10-28 11:43:00.974 127.0.0.1:54321       19935  #4490-194 INFO: GET /3/InitID, parms: {}
+10-28 11:43:01.087 127.0.0.1:54321       19935  #4490-196 INFO: GET /3/Frames/frame_rdd_57, parms: {row_count=10}
+10-28 11:43:38.907 127.0.0.1:54321       19935  #4490-193 INFO: POST /99/Rapids, parms: {ast=(tmp= RTMP_sid_8a78_1 (:= frame_rdd_57 (as.factor (cols frame_rdd_57 [0])) [0] [])), session_id=_sid_8a78}
+10-28 11:43:39.054 127.0.0.1:54321       19935  #4490-194 INFO: GET /3/Frames/RTMP_sid_8a78_1, parms: {row_count=10}
+10-28 11:44:35.150 127.0.0.1:54321       19935  #4490-193 INFO: POST /99/Rapids, parms: {ast=(tmp= RTMP_sid_8a78_2 (rows RTMP_sid_8a78_1 (<= (h2o.runif RTMP_sid_8a78_1 1) 0.75))), session_id=_sid_8a78}
+10-28 11:44:35.234 127.0.0.1:54321       19935  #4490-194 INFO: GET /3/Frames/RTMP_sid_8a78_2, parms: {row_count=10}
+10-28 11:44:35.498 127.0.0.1:54321       19935  #4490-197 INFO: POST /99/Rapids, parms: {ast=(tmp= RTMP_sid_8a78_4 (rows RTMP_sid_8a78_1 (> (tmp= RTMP_sid_8a78_3 (h2o.runif RTMP_sid_8a78_1 1)) 0.75))), session_id=_sid_8a78}
+10-28 11:44:35.532 127.0.0.1:54321       19935  #4490-198 INFO: GET /3/Frames/RTMP_sid_8a78_4, parms: {row_count=10}
+10-28 11:44:48.549 127.0.0.1:54321       19935  #4490-193 INFO: GET /3/ModelBuilders/drf, parms: {}
+10-28 11:44:48.605 127.0.0.1:54321       19935  #4490-195 INFO: POST /3/ModelBuilders/drf, parms: {max_depth=5, seed=1, training_frame=RTMP_sid_8a78_2, ntrees=20, nbins=32, validation_frame=RTMP_sid_8a78_4, response_column=rNames_tag, ignored_columns=[""]}
+10-28 11:44:48.632 127.0.0.1:54321       19935  FJ-1-7    INFO: Building H2O DRF model with these parameters:
+10-28 11:44:48.639 127.0.0.1:54321       19935  FJ-1-7    INFO: {"_train":{"name":"RTMP_sid_8a78_2","type":"Key"},"_valid":{"name":"RTMP_sid_8a78_4","type":"Key"},"_nfolds":0,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":1,"_fold_assignment":"AUTO","_categorical_encoding":"AUTO","_distribution":"multinomial","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":[""],"_ignore_const_cols":true,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":0,"_stopping_metric":"AUTO","_stopping_tolerance":0.001,"_response_column":"rNames_tag","_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_ntrees":20,"_max_depth":5,"_min_rows":1.0,"_nbins":32,"_nbins_cats":1024,"_min_split_improvement":1.0E-5,"_histogram_type":"AUTO","_r2_stopping":1.7976931348623157E308,"_nbins_top_level":1024,"_build_tree_one_node":false,"_score_tree_interval":0,"_initial_score_interval":4000,"_score_interval":4000,"_sample_rate":0.6320000290870667,"_sample_rate_per_class":null,"_col_sample_rate_change_per_level":1.0,"_col_sample_rate_per_tree":1.0,"_binomial_double_trees":false,"_mtries":-1}
+10-28 11:44:48.639 127.0.0.1:54321       19935  FJ-1-7    INFO: Dropping ignored columns: []
+10-28 11:44:48.656 127.0.0.1:54321       19935  FJ-1-7    INFO: Prior class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:44:48.656 127.0.0.1:54321       19935  FJ-1-7    INFO: Model class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:44:48.827 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: Metrics reported on Out-Of-Bag training samples
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_3
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: NaN
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: NaN
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: NaN
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs  Error   Rate
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: N/A
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_3
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: 1.0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: 1.0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: 34.538776
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.5416667
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.15384616, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078]
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp     2     0     0     2     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.6667    4 / 6
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     0     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1  0.6667    2 / 3
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    2 / 2
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     1     0     0     0     1     1     0     0     0     0     0     0     0     0     0     1     0     0     1     0  1.0000    5 / 5
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    2 / 2
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals     5     0     0     8     2     3     0     0     0     0     0     0     0     0     3     1     0     2     1     1  0.8462  22 / 26
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Summary:
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:                0                        0                   0          0          0    0.00000           0           0     0.00000
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO: Scoring History:
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:44:48.886 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:48  0.009 sec               0           NaN              NaN                           NaN             NaN                NaN                             NaN
+10-28 11:44:49.131 127.0.0.1:54321       19935  FJ-1-7    INFO: 1. tree was built in 00:00:00.241 (Wall: 28-Oct 11:44:49.129) 
+10-28 11:44:49.139 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:49.321 127.0.0.1:54321       19935  FJ-1-7    INFO: 2. tree was built in 00:00:00.162 (Wall: 28-Oct 11:44:49.321) 
+10-28 11:44:49.332 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:49.510 127.0.0.1:54321       19935  FJ-1-7    INFO: 3. tree was built in 00:00:00.141 (Wall: 28-Oct 11:44:49.510) 
+10-28 11:44:49.521 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:49.606 127.0.0.1:54321       19935  FJ-1-7    INFO: 4. tree was built in 00:00:00.076 (Wall: 28-Oct 11:44:49.606) 
+10-28 11:44:49.617 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:49.750 127.0.0.1:54321       19935  FJ-1-7    INFO: 5. tree was built in 00:00:00.113 (Wall: 28-Oct 11:44:49.750) 
+10-28 11:44:49.761 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:49.888 127.0.0.1:54321       19935  FJ-1-7    INFO: 6. tree was built in 00:00:00.105 (Wall: 28-Oct 11:44:49.888) 
+10-28 11:44:49.899 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.023 127.0.0.1:54321       19935  FJ-1-7    INFO: 7. tree was built in 00:00:00.103 (Wall: 28-Oct 11:44:50.023) 
+10-28 11:44:50.034 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.151 127.0.0.1:54321       19935  FJ-1-7    INFO: 8. tree was built in 00:00:00.096 (Wall: 28-Oct 11:44:50.151) 
+10-28 11:44:50.162 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.285 127.0.0.1:54321       19935  FJ-1-7    INFO: 9. tree was built in 00:00:00.102 (Wall: 28-Oct 11:44:50.285) 
+10-28 11:44:50.296 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.380 127.0.0.1:54321       19935  FJ-1-7    INFO: 10. tree was built in 00:00:00.063 (Wall: 28-Oct 11:44:50.380) 
+10-28 11:44:50.390 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.470 127.0.0.1:54321       19935  FJ-1-7    INFO: 11. tree was built in 00:00:00.067 (Wall: 28-Oct 11:44:50.469) 
+10-28 11:44:50.478 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.593 127.0.0.1:54321       19935  FJ-1-7    INFO: 12. tree was built in 00:00:00.102 (Wall: 28-Oct 11:44:50.593) 
+10-28 11:44:50.604 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.707 127.0.0.1:54321       19935  FJ-1-7    INFO: 13. tree was built in 00:00:00.082 (Wall: 28-Oct 11:44:50.707) 
+10-28 11:44:50.717 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.834 127.0.0.1:54321       19935  FJ-1-7    INFO: 14. tree was built in 00:00:00.095 (Wall: 28-Oct 11:44:50.834) 
+10-28 11:44:50.845 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.886 127.0.0.1:54321       19935  FJ-1-7    INFO: 15. tree was built in 00:00:00.023 (Wall: 28-Oct 11:44:50.886) 
+10-28 11:44:50.886 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.903 127.0.0.1:54321       19935  FJ-1-7    INFO: 16. tree was built in 00:00:00.010 (Wall: 28-Oct 11:44:50.903) 
+10-28 11:44:50.903 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:50.967 127.0.0.1:54321       19935  FJ-1-7    INFO: 17. tree was built in 00:00:00.052 (Wall: 28-Oct 11:44:50.967) 
+10-28 11:44:50.968 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:51.012 127.0.0.1:54321       19935  FJ-1-7    INFO: 18. tree was built in 00:00:00.029 (Wall: 28-Oct 11:44:51.012) 
+10-28 11:44:51.013 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:51.040 127.0.0.1:54321       19935  FJ-1-7    INFO: 19. tree was built in 00:00:00.017 (Wall: 28-Oct 11:44:51.040) 
+10-28 11:44:51.040 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:51.104 127.0.0.1:54321       19935  FJ-1-7    INFO: 20. tree was built in 00:00:00.050 (Wall: 28-Oct 11:44:51.104) 
+10-28 11:44:51.105 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: Metrics reported on Out-Of-Bag training samples
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_3
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: 0.37157005
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: 0.6095655
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: 2.9572327
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.49683473
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.69, 0.8, 0.85, 0.86, 0.89, 0.89, 0.89, 0.89, 0.9, 0.9]
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp    27     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 27
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     4     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0  0.2000     1 / 5
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     2     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     4 / 4
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     1     0     0    15     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  0.1176    2 / 17
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     1     0     0     0     0     0     0     0     0     1     0     0     1     0     0  1.0000     3 / 3
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     0     0     0     0     0     8     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 8
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     1     5     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  0.8571     6 / 7
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 2
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     0     0     0     0     0     0     2     0     0     0     1     0     0     0     0     0     0  0.3333     1 / 3
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     2 / 2
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     1     0     0     1     1     0     1     0     0     0     0     0     0     0     2     0     0     0     0     0  0.6667     4 / 6
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0  0.0000     0 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0  0.0000     0 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     4     0     0  0.4286     3 / 7
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0  0.3333     1 / 3
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals    31     4     1    28     1     9     5     2     0     2     0     0     0     2     3     1     1     7     3     0  0.3100  31 / 100
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: N/A
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_3
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: 0.44767797
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: 0.6690874
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: 2.5487342
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.33166668
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.5769231, 0.7692308, 0.80769235, 0.80769235, 0.8461539, 0.923077, 0.923077, 0.923077, 0.923077, 0.923077]
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 6
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     0     0     1     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.3333    1 / 3
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 2
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     1     0     0     0     0     0     0     1     0     0     0     1     0     0     1     0     0     1     0     0  0.8000    4 / 5
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0  0.0000    0 / 2
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals     7     1     1     7     0     2     0     1     0     0     0     1     0     0     2     0     0     2     2     0  0.4231  11 / 26
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: Variable Importances:
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:        Variable Relative Importance Scaled Importance Percentage
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_sen_s1          156.828979          1.000000   0.122893
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:      x_Ba_b_q05           94.511192          0.602639   0.074060
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_f13_s1           80.584038          0.513834   0.063147
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_Ba_b_q099           75.624352          0.482209   0.059260
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:      x_0_s_area           68.955406          0.439685   0.054034
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:        h_cor_s2           68.033646          0.433808   0.053312
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:       x_Ba_m_cy           59.152481          0.377178   0.046353
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: x_0_s_perimeter           51.385063          0.327650   0.040266
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:       x_Ba_m_cx           48.534630          0.309475   0.038032
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:        h_dva_s2           43.429859          0.276925   0.034032
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: ---
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_a_m_theta           27.553997          0.175695   0.021592
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_idm_s2           25.592438          0.163187   0.020055
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_Ba_b_q001           24.920296          0.158901   0.019528
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_Ba_b_q005           24.789633          0.158068   0.019425
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_f12_s2           24.361938          0.155341   0.019090
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:        h_var_s2           23.776804          0.151610   0.018632
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_0_m_theta           20.418030          0.130193   0.016000
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_cor_s1           19.714306          0.125706   0.015448
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:      x_Ba_b_mad           14.298422          0.091172   0.011204
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:       x_a_b_mad           10.836752          0.069099   0.008492
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Summary:
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:               20                      380               44095          1          5    2.73158           2          11     4.24474
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO: Scoring History:
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:48  0.009 sec               0           NaN              NaN                           NaN             NaN                NaN                             NaN
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:49  0.497 sec               1       0.62948         11.34068                       0.51613         0.73885           17.39846                         0.65385
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:49  0.689 sec               2       0.65116          9.44741                       0.51613         0.64597            7.32256                         0.53846
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:49  0.878 sec               3       0.66550         10.59543                       0.49333         0.64082            7.32395                         0.38462
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:49  0.974 sec               4       0.66243          9.74854                       0.50000         0.65411            6.14415                         0.30769
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:49  1.118 sec               5       0.67314         10.11725                       0.48889         0.65178            6.15050                         0.34615
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:49  1.256 sec               6       0.66072          9.42820                       0.44086         0.65651            5.03540                         0.30769
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  1.391 sec               7       0.63263          6.77145                       0.42708         0.66153            3.83947                         0.34615
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  1.519 sec               8       0.63770          6.67378                       0.42857         0.66485            3.86642                         0.30769
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  1.653 sec               9       0.63397          6.28572                       0.40404         0.66466            3.88193                         0.34615
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  1.748 sec              10       0.63907          6.25430                       0.38000         0.67076            3.89364                         0.38462
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  1.837 sec              11       0.64700          6.26684                       0.40000         0.67184            3.76673                         0.38462
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  1.961 sec              12       0.63841          5.61971                       0.36000         0.67218            3.78297                         0.34615
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  2.075 sec              13       0.63522          5.26343                       0.35000         0.66803            3.75314                         0.30769
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  2.202 sec              14       0.62725          4.28823                       0.31000         0.66447            2.52685                         0.30769
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  2.254 sec              15       0.62253          3.95525                       0.31000         0.67326            2.55696                         0.34615
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  2.271 sec              16       0.62185          3.95293                       0.31000         0.68044            2.59031                         0.34615
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:50  2.335 sec              17       0.61465          3.29380                       0.32000         0.67510            2.56106                         0.34615
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:51  2.380 sec              18       0.61255          3.28887                       0.31000         0.67170            2.55207                         0.38462
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:51  2.408 sec              19       0.61371          3.29815                       0.32000         0.67299            2.56203                         0.42308
+10-28 11:44:51.133 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:44:51  2.472 sec              20       0.60957          2.95723                       0.31000         0.66909            2.54873                         0.42308
+10-28 11:44:51.780 127.0.0.1:54321       19935  #4490-194 INFO: GET /3/Models/DRF_model_R_1477647427014_3, parms: {}
+10-28 11:47:57.994 127.0.0.1:54321       19935  #4490-196 INFO: GET /3/ModelBuilders/gbm, parms: {}
+10-28 11:47:58.145 127.0.0.1:54321       19935  #4490-198 INFO: POST /3/ModelBuilders/gbm, parms: {col_sample_rate=0.7, validation_frame=RTMP_sid_8a78_4, response_column=rNames_tag, max_depth=3, training_frame=RTMP_sid_8a78_2, seed=1, learn_rate=0.01, ntrees=20, ignored_columns=[""]}
+10-28 11:47:58.160 127.0.0.1:54321       19935  FJ-1-1    INFO: Building H2O GBM model with these parameters:
+10-28 11:47:58.164 127.0.0.1:54321       19935  FJ-1-1    INFO: {"_train":{"name":"RTMP_sid_8a78_2","type":"Key"},"_valid":{"name":"RTMP_sid_8a78_4","type":"Key"},"_nfolds":0,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":1,"_fold_assignment":"AUTO","_categorical_encoding":"AUTO","_distribution":"AUTO","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":[""],"_ignore_const_cols":true,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":0,"_stopping_metric":"AUTO","_stopping_tolerance":0.001,"_response_column":"rNames_tag","_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_ntrees":20,"_max_depth":3,"_min_rows":10.0,"_nbins":20,"_nbins_cats":1024,"_min_split_improvement":1.0E-5,"_histogram_type":"AUTO","_r2_stopping":1.7976931348623157E308,"_nbins_top_level":1024,"_build_tree_one_node":false,"_score_tree_interval":0,"_initial_score_interval":4000,"_score_interval":4000,"_sample_rate":1.0,"_sample_rate_per_class":null,"_col_sample_rate_change_per_level":1.0,"_col_sample_rate_per_tree":1.0,"_learn_rate":0.01,"_learn_rate_annealing":1.0,"_col_sample_rate":0.7,"_max_abs_leafnode_pred":1.7976931348623157E308}
+10-28 11:47:58.164 127.0.0.1:54321       19935  FJ-1-1    INFO: Dropping ignored columns: []
+10-28 11:47:58.176 127.0.0.1:54321       19935  FJ-1-1    INFO: Prior class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:47:58.197 127.0.0.1:54321       19935  FJ-1-1    INFO: Model class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:47:58.272 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Metrics Type: Multinomial
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  Description: N/A
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  model id: GBM_model_R_1477647427014_4
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  MSE: 0.9025
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  RMSE: 0.95
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  logloss: 2.9957323
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  mean_per_class_error: 0.9011302
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  hit ratios: [0.13, 0.25, 0.31, 0.37, 0.38, 0.4, 0.41, 0.44, 0.45, 0.48999998]
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   bspp     7     1     0     4     0     2     2     0     0     1     0     1     1     1     2     0     0     5     0     0  0.7407   20 / 27
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   espp     3     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     5 / 5
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacs     1     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0  0.7500     3 / 4
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacu     6     2     0     3     0     3     0     0     0     1     0     0     0     0     0     0     0     1     0     1  0.8235   14 / 17
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipas     1     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipat     1     0     0     2     0     1     1     0     0     1     1     0     0     0     1     0     0     0     0     0  0.8750     7 / 8
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   istr     0     0     0     1     1     0     0     0     0     1     0     0     1     1     2     0     0     0     0     0  1.0000     7 / 7
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   ists     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmas     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     3 / 3
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   nlab     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   oces     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   poll     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   pols     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   snep     0     0     0     1     2     1     0     0     0     0     0     0     0     0     1     1     0     0     0     0  0.8333     5 / 6
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   sppa     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   spps     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   spsp     2     0     0     0     1     0     1     0     0     0     1     0     0     0     0     1     0     0     1     0  1.0000     7 / 7
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   squa     1     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   strs     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO: Totals    25     5     3    17     5     9     6     0     0     5     2     1     2     2     6     2     0     7     2     1  0.8700  87 / 100
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Metrics Type: Multinomial
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  Description: N/A
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  model id: GBM_model_R_1477647427014_4
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  MSE: 0.9025
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  RMSE: 0.95
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  logloss: 2.9957323
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  mean_per_class_error: 0.5416667
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  hit ratios: [0.15384616, 0.34615386, 0.42307693, 0.61538464, 0.61538464, 0.6538462, 0.6538462, 0.6923078, 0.6923078, 0.73076934]
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   bspp     2     0     0     2     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.6667    4 / 6
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   espp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacu     0     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1  0.6667    2 / 3
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipat     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    2 / 2
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmas     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   nlab     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   snep     1     0     0     0     1     1     0     0     0     0     0     0     0     0     0     1     0     0     1     0  1.0000    5 / 5
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   squa     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    2 / 2
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO: Totals     5     0     0     8     2     3     0     0     0     0     0     0     0     0     3     1     0     2     1     1  0.8462  22 / 26
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Summary:
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:                0                        0                   0          0          0    0.00000           0           0     0.00000
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO: Scoring History:
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:47:58.280 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:58  0.016 sec               0       0.95000          2.99573                       0.87000         0.95000            2.99573                         0.84615
+10-28 11:47:58.500 127.0.0.1:54321       19935  FJ-1-1    INFO: 1. tree was built in 00:00:00.219 (Wall: 28-Oct 11:47:58.500) 
+10-28 11:47:58.514 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:58.844 127.0.0.1:54321       19935  FJ-1-1    INFO: 2. tree was built in 00:00:00.306 (Wall: 28-Oct 11:47:58.843) 
+10-28 11:47:58.854 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:58.982 127.0.0.1:54321       19935  FJ-1-1    INFO: 3. tree was built in 00:00:00.107 (Wall: 28-Oct 11:47:58.982) 
+10-28 11:47:58.993 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.106 127.0.0.1:54321       19935  FJ-1-1    INFO: 4. tree was built in 00:00:00.092 (Wall: 28-Oct 11:47:59.106) 
+10-28 11:47:59.107 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.166 127.0.0.1:54321       19935  FJ-1-1    INFO: 5. tree was built in 00:00:00.055 (Wall: 28-Oct 11:47:59.165) 
+10-28 11:47:59.173 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.205 127.0.0.1:54321       19935  FJ-1-1    INFO: 6. tree was built in 00:00:00.029 (Wall: 28-Oct 11:47:59.205) 
+10-28 11:47:59.206 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.233 127.0.0.1:54321       19935  FJ-1-1    INFO: 7. tree was built in 00:00:00.025 (Wall: 28-Oct 11:47:59.232) 
+10-28 11:47:59.233 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.260 127.0.0.1:54321       19935  FJ-1-1    INFO: 8. tree was built in 00:00:00.025 (Wall: 28-Oct 11:47:59.260) 
+10-28 11:47:59.262 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.292 127.0.0.1:54321       19935  FJ-1-1    INFO: 9. tree was built in 00:00:00.028 (Wall: 28-Oct 11:47:59.292) 
+10-28 11:47:59.292 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.328 127.0.0.1:54321       19935  FJ-1-1    INFO: 10. tree was built in 00:00:00.034 (Wall: 28-Oct 11:47:59.328) 
+10-28 11:47:59.328 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.348 127.0.0.1:54321       19935  FJ-1-1    INFO: 11. tree was built in 00:00:00.016 (Wall: 28-Oct 11:47:59.347) 
+10-28 11:47:59.348 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.373 127.0.0.1:54321       19935  FJ-1-1    INFO: 12. tree was built in 00:00:00.023 (Wall: 28-Oct 11:47:59.373) 
+10-28 11:47:59.373 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.397 127.0.0.1:54321       19935  FJ-1-1    INFO: 13. tree was built in 00:00:00.022 (Wall: 28-Oct 11:47:59.397) 
+10-28 11:47:59.397 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.419 127.0.0.1:54321       19935  FJ-1-1    INFO: 14. tree was built in 00:00:00.020 (Wall: 28-Oct 11:47:59.419) 
+10-28 11:47:59.420 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.440 127.0.0.1:54321       19935  FJ-1-1    INFO: 15. tree was built in 00:00:00.017 (Wall: 28-Oct 11:47:59.440) 
+10-28 11:47:59.440 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.483 127.0.0.1:54321       19935  FJ-1-1    INFO: 16. tree was built in 00:00:00.038 (Wall: 28-Oct 11:47:59.483) 
+10-28 11:47:59.485 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.507 127.0.0.1:54321       19935  FJ-1-1    INFO: 17. tree was built in 00:00:00.019 (Wall: 28-Oct 11:47:59.507) 
+10-28 11:47:59.508 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.541 127.0.0.1:54321       19935  FJ-1-1    INFO: 18. tree was built in 00:00:00.031 (Wall: 28-Oct 11:47:59.541) 
+10-28 11:47:59.542 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.560 127.0.0.1:54321       19935  FJ-1-1    INFO: 19. tree was built in 00:00:00.016 (Wall: 28-Oct 11:47:59.560) 
+10-28 11:47:59.561 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.584 127.0.0.1:54321       19935  FJ-1-1    INFO: 20. tree was built in 00:00:00.021 (Wall: 28-Oct 11:47:59.584) 
+10-28 11:47:59.584 127.0.0.1:54321       19935  FJ-1-1    INFO: ============================================================== 
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Metrics Type: Multinomial
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  Description: N/A
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  model id: GBM_model_R_1477647427014_4
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  MSE: 0.7040638
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  RMSE: 0.8390851
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  logloss: 1.8859012
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  mean_per_class_error: 0.44761905
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  hit ratios: [0.82, 0.97, 0.99, 0.99, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   bspp    27     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 27
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   espp     0     5     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 5
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacs     0     0     2     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.5000     2 / 4
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacu     0     0     0    17     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 17
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipas     0     0     0     0     2     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.3333     1 / 3
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipat     0     0     0     0     0     8     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 8
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   istr     0     0     0     1     0     0     6     0     0     0     0     0     0     0     0     0     0     0     0     0  0.1429     1 / 7
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   ists     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 2
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmas     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     2     0     0  0.6667     2 / 3
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   nlab     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   oces     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0  1.0000     2 / 2
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0  0.0000     0 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   snep     1     0     0     0     0     0     0     0     0     0     0     0     0     0     5     0     0     0     0     0  0.1667     1 / 6
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   spsp     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     6     0     0  0.1429     1 / 7
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   squa     1     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   strs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: Totals    29     7     3    21     2    10     6     2     0     1     0     0     0     1     7     0     0    11     0     0  0.1800  18 / 100
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Metrics Type: Multinomial
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  Description: N/A
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  model id: GBM_model_R_1477647427014_4
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  MSE: 0.76065063
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  RMSE: 0.87215286
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  logloss: 2.2017555
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  mean_per_class_error: 0.355
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  hit ratios: [0.5769231, 0.6923077, 0.7307693, 0.7307693, 0.80769235, 0.8461539, 0.923077, 0.923077, 0.923077, 0.96153855]
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   bspp     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 6
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   espp     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacs     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacu     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 3
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipat     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 2
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmas     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   nlab     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   poll     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   snep     1     0     0     0     0     0     0     0     1     0     0     0     0     0     2     0     0     1     0     0  0.6000    3 / 5
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   squa     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000    2 / 2
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: Totals     7     3     1     6     0     2     0     1     1     0     0     0     0     0     2     0     0     3     0     0  0.4231  11 / 26
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: Variable Importances:
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         Variable Relative Importance Scaled Importance Percentage
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:    x_Ba_h_sen_s1          217.344177          1.000000   0.281384
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:       x_Ba_b_q05           86.799332          0.399364   0.112375
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:    x_Ba_h_f13_s1           63.183361          0.290706   0.081800
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:      x_Ba_b_q099           56.949951          0.262027   0.073730
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:       x_0_s_area           56.105824          0.258143   0.072637
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: x_0_s_radius_min           53.911911          0.248049   0.069797
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  x_0_s_perimeter           31.826427          0.146433   0.041204
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         h_cor_s2           24.963463          0.114857   0.032319
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         h_asm_s1           22.513769          0.103586   0.029147
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:        x_Ba_m_cy           21.122303          0.097184   0.027346
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: ---
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  x_0_s_radius_sd            3.488545          0.016051   0.004516
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:    x_Ba_h_idm_s2            3.399723          0.015642   0.004401
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         h_f13_s1            2.620246          0.012056   0.003392
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:      x_0_m_theta            1.989421          0.009153   0.002576
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:        x_a_b_mad            1.803212          0.008297   0.002335
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:    x_Ba_h_f12_s2            1.550978          0.007136   0.002008
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:      x_Ba_b_q005            1.042302          0.004796   0.001349
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         h_var_s2            0.647702          0.002980   0.000839
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:      x_Ba_b_q001            0.001578          0.000007   0.000002
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:         h_sen_s2            0.001064          0.000005   0.000001
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Summary:
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:               20                      380               46624          1          3    2.92632           2           8     4.76579
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO: Scoring History:
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:58  0.016 sec               0       0.95000          2.99573                       0.87000         0.95000            2.99573                         0.84615
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:58  0.341 sec               1       0.94416          2.88712                       0.26000         0.94588            2.91910                         0.46154
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:58  0.684 sec               2       0.93853          2.79441                       0.25000         0.94145            2.84526                         0.42308
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:58  0.823 sec               3       0.93265          2.70707                       0.24000         0.93669            2.77498                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  0.947 sec               4       0.92682          2.62833                       0.21000         0.93246            2.71820                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.006 sec               5       0.92107          2.55714                       0.24000         0.92840            2.66844                         0.42308
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.046 sec               6       0.91543          2.49268                       0.24000         0.92426            2.62127                         0.42308
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.073 sec               7       0.90980          2.43227                       0.20000         0.92047            2.57966                         0.42308
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.101 sec               8       0.90431          2.37675                       0.20000         0.91632            2.53866                         0.42308
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.133 sec               9       0.89865          2.32296                       0.20000         0.91240            2.50129                         0.42308
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.168 sec              10       0.89321          2.27390                       0.19000         0.90832            2.46494                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.188 sec              11       0.88791          2.22878                       0.19000         0.90449            2.43108                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.214 sec              12       0.88241          2.18397                       0.19000         0.90017            2.39537                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.237 sec              13       0.87678          2.13982                       0.18000         0.89641            2.36722                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.260 sec              14       0.87145          2.09983                       0.18000         0.89306            2.34204                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.281 sec              15       0.86595          2.06030                       0.17000         0.88901            2.31162                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.324 sec              16       0.86070          2.02373                       0.17000         0.88571            2.28965                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.348 sec              17       0.85554          1.98922                       0.17000         0.88235            2.26648                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.382 sec              18       0.85008          1.95381                       0.17000         0.87899            2.24320                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.401 sec              19       0.84458          1.91922                       0.17000         0.87570            2.22248                         0.38462
+10-28 11:47:59.592 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 11:47:59  1.425 sec              20       0.83909          1.88590                       0.18000         0.87215            2.20176                         0.42308
+10-28 11:48:00.254 127.0.0.1:54321       19935  #4490-196 INFO: GET /3/Models/GBM_model_R_1477647427014_4, parms: {}
+10-28 11:52:16.613 127.0.0.1:54321       19935  #4490-198 INFO: GET /3/ModelBuilders/gbm, parms: {}
+10-28 11:52:16.706 127.0.0.1:54321       19935  #4490-193 INFO: POST /3/ModelBuilders/gbm, parms: {col_sample_rate=0.7, validation_frame=RTMP_sid_8a78_4, response_column=rNames_tag, max_depth=3, training_frame=RTMP_sid_8a78_2, seed=1, learn_rate=0.01, ntrees=20, ignored_columns=[""]}
+10-28 11:52:16.721 127.0.0.1:54321       19935  FJ-1-5    INFO: Building H2O GBM model with these parameters:
+10-28 11:52:16.722 127.0.0.1:54321       19935  FJ-1-5    INFO: {"_train":{"name":"RTMP_sid_8a78_2","type":"Key"},"_valid":{"name":"RTMP_sid_8a78_4","type":"Key"},"_nfolds":0,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":1,"_fold_assignment":"AUTO","_categorical_encoding":"AUTO","_distribution":"AUTO","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":[""],"_ignore_const_cols":true,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":0,"_stopping_metric":"AUTO","_stopping_tolerance":0.001,"_response_column":"rNames_tag","_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_ntrees":20,"_max_depth":3,"_min_rows":10.0,"_nbins":20,"_nbins_cats":1024,"_min_split_improvement":1.0E-5,"_histogram_type":"AUTO","_r2_stopping":1.7976931348623157E308,"_nbins_top_level":1024,"_build_tree_one_node":false,"_score_tree_interval":0,"_initial_score_interval":4000,"_score_interval":4000,"_sample_rate":1.0,"_sample_rate_per_class":null,"_col_sample_rate_change_per_level":1.0,"_col_sample_rate_per_tree":1.0,"_learn_rate":0.01,"_learn_rate_annealing":1.0,"_col_sample_rate":0.7,"_max_abs_leafnode_pred":1.7976931348623157E308}
+10-28 11:52:16.722 127.0.0.1:54321       19935  FJ-1-5    INFO: Dropping ignored columns: []
+10-28 11:52:16.733 127.0.0.1:54321       19935  FJ-1-5    INFO: Prior class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:52:16.733 127.0.0.1:54321       19935  FJ-1-5    INFO: Model class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:52:16.864 127.0.0.1:54321       19935  #4490-195 INFO: POST /99/Rapids, parms: {ast=(rm RTMP_sid_8a78_3), session_id=_sid_8a78}
+10-28 11:52:16.953 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO: Model Metrics Type: Multinomial
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  Description: N/A
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  model id: GBM_model_R_1477647427014_5
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  MSE: 0.9025
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  RMSE: 0.95
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  logloss: 2.9957323
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  mean_per_class_error: 0.9011302
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  hit ratios: [0.13, 0.25, 0.31, 0.37, 0.38, 0.4, 0.41, 0.44, 0.45, 0.48999998]
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   bspp     7     1     0     4     0     2     2     0     0     1     0     1     1     1     2     0     0     5     0     0  0.7407   20 / 27
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   espp     3     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     5 / 5
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacs     1     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0  0.7500     3 / 4
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacu     6     2     0     3     0     3     0     0     0     1     0     0     0     0     0     0     0     1     0     1  0.8235   14 / 17
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipas     1     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipat     1     0     0     2     0     1     1     0     0     1     1     0     0     0     1     0     0     0     0     0  0.8750     7 / 8
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   istr     0     0     0     1     1     0     0     0     0     1     0     0     1     1     2     0     0     0     0     0  1.0000     7 / 7
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   ists     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmas     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     3 / 3
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   nlab     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   oces     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   poll     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   pols     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   snep     0     0     0     1     2     1     0     0     0     0     0     0     0     0     1     1     0     0     0     0  0.8333     5 / 6
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   sppa     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   spps     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   spsp     2     0     0     0     1     0     1     0     0     0     1     0     0     0     0     1     0     0     1     0  1.0000     7 / 7
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   squa     1     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   strs     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO: Totals    25     5     3    17     5     9     6     0     0     5     2     1     2     2     6     2     0     7     2     1  0.8700  87 / 100
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO: Model Metrics Type: Multinomial
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  Description: N/A
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  model id: GBM_model_R_1477647427014_5
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  MSE: 0.9025
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  RMSE: 0.95
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  logloss: 2.9957323
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  mean_per_class_error: 0.5416667
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  hit ratios: [0.15384616, 0.34615386, 0.42307693, 0.61538464, 0.61538464, 0.6538462, 0.6538462, 0.6923078, 0.6923078, 0.73076934]
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   bspp     2     0     0     2     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.6667    4 / 6
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   espp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacu     0     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1  0.6667    2 / 3
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipat     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    2 / 2
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmas     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   nlab     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   snep     1     0     0     0     1     1     0     0     0     0     0     0     0     0     0     1     0     0     1     0  1.0000    5 / 5
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   squa     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    2 / 2
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO: Totals     5     0     0     8     2     3     0     0     0     0     0     0     0     0     3     1     0     2     1     1  0.8462  22 / 26
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO: Model Summary:
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:                0                        0                   0          0          0    0.00000           0           0     0.00000
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO: Scoring History:
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:52:16.983 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:16  0.020 sec               0       0.95000          2.99573                       0.87000         0.95000            2.99573                         0.84615
+10-28 11:52:17.155 127.0.0.1:54321       19935  FJ-1-5    INFO: 1. tree was built in 00:00:00.167 (Wall: 28-Oct 11:52:17.155) 
+10-28 11:52:17.166 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.250 127.0.0.1:54321       19935  FJ-1-5    INFO: 2. tree was built in 00:00:00.063 (Wall: 28-Oct 11:52:17.250) 
+10-28 11:52:17.250 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.328 127.0.0.1:54321       19935  FJ-1-5    INFO: 3. tree was built in 00:00:00.067 (Wall: 28-Oct 11:52:17.328) 
+10-28 11:52:17.338 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.384 127.0.0.1:54321       19935  FJ-1-5    INFO: 4. tree was built in 00:00:00.035 (Wall: 28-Oct 11:52:17.384) 
+10-28 11:52:17.386 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.421 127.0.0.1:54321       19935  FJ-1-5    INFO: 5. tree was built in 00:00:00.032 (Wall: 28-Oct 11:52:17.421) 
+10-28 11:52:17.421 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.506 127.0.0.1:54321       19935  FJ-1-5    INFO: 6. tree was built in 00:00:00.082 (Wall: 28-Oct 11:52:17.505) 
+10-28 11:52:17.510 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.545 127.0.0.1:54321       19935  FJ-1-5    INFO: 7. tree was built in 00:00:00.034 (Wall: 28-Oct 11:52:17.545) 
+10-28 11:52:17.549 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.621 127.0.0.1:54321       19935  FJ-1-5    INFO: 8. tree was built in 00:00:00.052 (Wall: 28-Oct 11:52:17.621) 
+10-28 11:52:17.622 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.764 127.0.0.1:54321       19935  FJ-1-5    INFO: 9. tree was built in 00:00:00.129 (Wall: 28-Oct 11:52:17.764) 
+10-28 11:52:17.773 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.798 127.0.0.1:54321       19935  FJ-1-5    INFO: 10. tree was built in 00:00:00.021 (Wall: 28-Oct 11:52:17.798) 
+10-28 11:52:17.798 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.864 127.0.0.1:54321       19935  FJ-1-5    INFO: 11. tree was built in 00:00:00.045 (Wall: 28-Oct 11:52:17.864) 
+10-28 11:52:17.865 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:17.921 127.0.0.1:54321       19935  FJ-1-5    INFO: 12. tree was built in 00:00:00.053 (Wall: 28-Oct 11:52:17.921) 
+10-28 11:52:17.932 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.056 127.0.0.1:54321       19935  FJ-1-5    INFO: 13. tree was built in 00:00:00.110 (Wall: 28-Oct 11:52:18.056) 
+10-28 11:52:18.057 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.101 127.0.0.1:54321       19935  FJ-1-5    INFO: 14. tree was built in 00:00:00.032 (Wall: 28-Oct 11:52:18.101) 
+10-28 11:52:18.102 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.173 127.0.0.1:54321       19935  FJ-1-5    INFO: 15. tree was built in 00:00:00.059 (Wall: 28-Oct 11:52:18.173) 
+10-28 11:52:18.184 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.232 127.0.0.1:54321       19935  FJ-1-5    INFO: 16. tree was built in 00:00:00.028 (Wall: 28-Oct 11:52:18.232) 
+10-28 11:52:18.237 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.273 127.0.0.1:54321       19935  FJ-1-5    INFO: 17. tree was built in 00:00:00.033 (Wall: 28-Oct 11:52:18.273) 
+10-28 11:52:18.274 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.353 127.0.0.1:54321       19935  FJ-1-5    INFO: 18. tree was built in 00:00:00.067 (Wall: 28-Oct 11:52:18.353) 
+10-28 11:52:18.364 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.394 127.0.0.1:54321       19935  FJ-1-5    INFO: 19. tree was built in 00:00:00.028 (Wall: 28-Oct 11:52:18.394) 
+10-28 11:52:18.405 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.464 127.0.0.1:54321       19935  FJ-1-5    INFO: 20. tree was built in 00:00:00.053 (Wall: 28-Oct 11:52:18.464) 
+10-28 11:52:18.465 127.0.0.1:54321       19935  FJ-1-5    INFO: ============================================================== 
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: Model Metrics Type: Multinomial
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  Description: N/A
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  model id: GBM_model_R_1477647427014_5
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  MSE: 0.7040638
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  RMSE: 0.8390851
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  logloss: 1.8859012
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  mean_per_class_error: 0.44761905
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  hit ratios: [0.82, 0.97, 0.99, 0.99, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   bspp    27     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 27
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   espp     0     5     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 5
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacs     0     0     2     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.5000     2 / 4
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacu     0     0     0    17     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 17
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipas     0     0     0     0     2     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.3333     1 / 3
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipat     0     0     0     0     0     8     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 8
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   istr     0     0     0     1     0     0     6     0     0     0     0     0     0     0     0     0     0     0     0     0  0.1429     1 / 7
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   ists     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 2
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmas     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     2     0     0  0.6667     2 / 3
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   nlab     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   oces     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0  1.0000     2 / 2
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0  0.0000     0 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   snep     1     0     0     0     0     0     0     0     0     0     0     0     0     0     5     0     0     0     0     0  0.1667     1 / 6
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   spsp     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     6     0     0  0.1429     1 / 7
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   squa     1     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   strs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: Totals    29     7     3    21     2    10     6     2     0     1     0     0     0     1     7     0     0    11     0     0  0.1800  18 / 100
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: Model Metrics Type: Multinomial
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  Description: N/A
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  model id: GBM_model_R_1477647427014_5
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  MSE: 0.76065063
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  RMSE: 0.87215286
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  logloss: 2.2017555
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  mean_per_class_error: 0.355
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  hit ratios: [0.5769231, 0.6923077, 0.7307693, 0.7307693, 0.80769235, 0.8461539, 0.923077, 0.923077, 0.923077, 0.96153855]
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   bspp     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 6
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   espp     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacs     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   iacu     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 3
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   ipat     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 2
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   lmas     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   nlab     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   poll     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   snep     1     0     0     0     0     0     0     0     1     0     0     0     0     0     2     0     0     1     0     0  0.6000    3 / 5
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   squa     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000    2 / 2
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: Totals     7     3     1     6     0     2     0     1     1     0     0     0     0     0     2     0     0     3     0     0  0.4231  11 / 26
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: Variable Importances:
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         Variable Relative Importance Scaled Importance Percentage
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:    x_Ba_h_sen_s1          217.344177          1.000000   0.281384
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:       x_Ba_b_q05           86.799332          0.399364   0.112375
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:    x_Ba_h_f13_s1           63.183361          0.290706   0.081800
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:      x_Ba_b_q099           56.949951          0.262027   0.073730
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:       x_0_s_area           56.105820          0.258143   0.072637
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: x_0_s_radius_min           53.911911          0.248049   0.069797
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  x_0_s_perimeter           31.826427          0.146433   0.041204
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         h_cor_s2           24.963463          0.114857   0.032319
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         h_asm_s1           22.513769          0.103586   0.029147
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:        x_Ba_m_cy           21.122303          0.097184   0.027346
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: ---
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  x_0_s_radius_sd            3.488545          0.016051   0.004516
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:    x_Ba_h_idm_s2            3.399723          0.015642   0.004401
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         h_f13_s1            2.620246          0.012056   0.003392
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:      x_0_m_theta            1.989421          0.009153   0.002576
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:        x_a_b_mad            1.803212          0.008297   0.002335
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:    x_Ba_h_f12_s2            1.550978          0.007136   0.002008
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:      x_Ba_b_q005            1.042302          0.004796   0.001349
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         h_var_s2            0.647702          0.002980   0.000839
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:      x_Ba_b_q001            0.001578          0.000007   0.000002
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:         h_sen_s2            0.001064          0.000005   0.000001
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: Model Summary:
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:               20                      380               46625          1          3    2.92632           2           8     4.76579
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO: Scoring History:
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:16  0.020 sec               0       0.95000          2.99573                       0.87000         0.95000            2.99573                         0.84615
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.443 sec               1       0.94416          2.88712                       0.26000         0.94588            2.91910                         0.46154
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.538 sec               2       0.93853          2.79441                       0.25000         0.94145            2.84526                         0.42308
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.616 sec               3       0.93265          2.70707                       0.24000         0.93669            2.77498                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.672 sec               4       0.92682          2.62833                       0.21000         0.93246            2.71820                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.709 sec               5       0.92107          2.55714                       0.24000         0.92840            2.66844                         0.42308
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.793 sec               6       0.91543          2.49268                       0.24000         0.92426            2.62127                         0.42308
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.833 sec               7       0.90980          2.43227                       0.20000         0.92047            2.57966                         0.42308
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  0.909 sec               8       0.90431          2.37675                       0.20000         0.91632            2.53866                         0.42308
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  1.052 sec               9       0.89865          2.32296                       0.20000         0.91240            2.50129                         0.42308
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  1.086 sec              10       0.89321          2.27390                       0.19000         0.90832            2.46494                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  1.152 sec              11       0.88791          2.22878                       0.19000         0.90449            2.43108                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:17  1.209 sec              12       0.88241          2.18397                       0.19000         0.90017            2.39537                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.344 sec              13       0.87678          2.13982                       0.18000         0.89641            2.36722                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.389 sec              14       0.87145          2.09983                       0.18000         0.89306            2.34204                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.461 sec              15       0.86595          2.06030                       0.17000         0.88901            2.31162                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.520 sec              16       0.86070          2.02373                       0.17000         0.88571            2.28965                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.561 sec              17       0.85554          1.98922                       0.17000         0.88235            2.26648                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.641 sec              18       0.85008          1.95381                       0.17000         0.87899            2.24320                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.682 sec              19       0.84458          1.91922                       0.17000         0.87570            2.22248                         0.38462
+10-28 11:52:18.473 127.0.0.1:54321       19935  FJ-1-5    INFO:  2016-10-28 11:52:18  1.752 sec              20       0.83909          1.88590                       0.18000         0.87215            2.20176                         0.42308
+10-28 11:52:19.001 127.0.0.1:54321       19935  #4490-193 INFO: GET /3/Models/GBM_model_R_1477647427014_5, parms: {}
+10-28 11:58:25.403 127.0.0.1:54321       19935  #4490-195 INFO: GET /3/ModelBuilders/drf, parms: {}
+10-28 11:58:25.507 127.0.0.1:54321       19935  #4490-197 INFO: POST /3/ModelBuilders/drf, parms: {max_depth=5, seed=1, training_frame=RTMP_sid_8a78_2, ntrees=20, nbins=32, validation_frame=RTMP_sid_8a78_4, response_column=rNames_tag, ignored_columns=[""]}
+10-28 11:58:25.521 127.0.0.1:54321       19935  FJ-1-7    INFO: Building H2O DRF model with these parameters:
+10-28 11:58:25.521 127.0.0.1:54321       19935  FJ-1-7    INFO: {"_train":{"name":"RTMP_sid_8a78_2","type":"Key"},"_valid":{"name":"RTMP_sid_8a78_4","type":"Key"},"_nfolds":0,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":1,"_fold_assignment":"AUTO","_categorical_encoding":"AUTO","_distribution":"multinomial","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":[""],"_ignore_const_cols":true,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":0,"_stopping_metric":"AUTO","_stopping_tolerance":0.001,"_response_column":"rNames_tag","_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_ntrees":20,"_max_depth":5,"_min_rows":1.0,"_nbins":32,"_nbins_cats":1024,"_min_split_improvement":1.0E-5,"_histogram_type":"AUTO","_r2_stopping":1.7976931348623157E308,"_nbins_top_level":1024,"_build_tree_one_node":false,"_score_tree_interval":0,"_initial_score_interval":4000,"_score_interval":4000,"_sample_rate":0.6320000290870667,"_sample_rate_per_class":null,"_col_sample_rate_change_per_level":1.0,"_col_sample_rate_per_tree":1.0,"_binomial_double_trees":false,"_mtries":-1}
+10-28 11:58:25.522 127.0.0.1:54321       19935  FJ-1-7    INFO: Dropping ignored columns: []
+10-28 11:58:25.525 127.0.0.1:54321       19935  FJ-1-7    INFO: Prior class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:58:25.526 127.0.0.1:54321       19935  FJ-1-7    INFO: Model class distribution: [0.27, 0.05, 0.04, 0.17, 0.03, 0.08, 0.07, 0.02, 0.0, 0.03, 0.01, 0.01, 0.02, 0.01, 0.06, 0.01, 0.01, 0.07, 0.03, 0.01]
+10-28 11:58:25.698 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: Metrics reported on Out-Of-Bag training samples
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_6
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: NaN
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: NaN
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: NaN
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs  Error   Rate
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0    NaN  0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: N/A
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_6
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: 1.0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: 1.0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: 34.538776
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.5416667
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.15384616, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078, 0.26923078]
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp     2     0     0     2     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.6667    4 / 6
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     0     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1  0.6667    2 / 3
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    2 / 2
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     1     0     0     0     1     1     0     0     0     0     0     0     0     0     0     1     0     0     1     0  1.0000    5 / 5
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    2 / 2
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals     5     0     0     8     2     3     0     0     0     0     0     0     0     0     3     1     0     2     1     1  0.8462  22 / 26
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Summary:
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:                0                        0                   0          0          0    0.00000           0           0     0.00000
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO: Scoring History:
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:58:25.709 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.009 sec               0           NaN              NaN                           NaN             NaN                NaN                             NaN
+10-28 11:58:25.791 127.0.0.1:54321       19935  FJ-1-7    INFO: 1. tree was built in 00:00:00.066 (Wall: 28-Oct 11:58:25.790) 
+10-28 11:58:25.792 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.832 127.0.0.1:54321       19935  FJ-1-7    INFO: 2. tree was built in 00:00:00.035 (Wall: 28-Oct 11:58:25.832) 
+10-28 11:58:25.833 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.862 127.0.0.1:54321       19935  FJ-1-7    INFO: 3. tree was built in 00:00:00.028 (Wall: 28-Oct 11:58:25.862) 
+10-28 11:58:25.863 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.885 127.0.0.1:54321       19935  FJ-1-7    INFO: 4. tree was built in 00:00:00.021 (Wall: 28-Oct 11:58:25.885) 
+10-28 11:58:25.886 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.913 127.0.0.1:54321       19935  FJ-1-7    INFO: 5. tree was built in 00:00:00.024 (Wall: 28-Oct 11:58:25.913) 
+10-28 11:58:25.914 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.940 127.0.0.1:54321       19935  FJ-1-7    INFO: 6. tree was built in 00:00:00.022 (Wall: 28-Oct 11:58:25.940) 
+10-28 11:58:25.941 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.952 127.0.0.1:54321       19935  FJ-1-7    INFO: 7. tree was built in 00:00:00.010 (Wall: 28-Oct 11:58:25.952) 
+10-28 11:58:25.952 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.965 127.0.0.1:54321       19935  FJ-1-7    INFO: 8. tree was built in 00:00:00.010 (Wall: 28-Oct 11:58:25.965) 
+10-28 11:58:25.965 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.976 127.0.0.1:54321       19935  FJ-1-7    INFO: 9. tree was built in 00:00:00.007 (Wall: 28-Oct 11:58:25.976) 
+10-28 11:58:25.977 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.986 127.0.0.1:54321       19935  FJ-1-7    INFO: 10. tree was built in 00:00:00.007 (Wall: 28-Oct 11:58:25.986) 
+10-28 11:58:25.986 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:25.996 127.0.0.1:54321       19935  FJ-1-7    INFO: 11. tree was built in 00:00:00.008 (Wall: 28-Oct 11:58:25.996) 
+10-28 11:58:25.997 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.009 127.0.0.1:54321       19935  FJ-1-7    INFO: 12. tree was built in 00:00:00.009 (Wall: 28-Oct 11:58:26.009) 
+10-28 11:58:26.012 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.024 127.0.0.1:54321       19935  FJ-1-7    INFO: 13. tree was built in 00:00:00.009 (Wall: 28-Oct 11:58:26.024) 
+10-28 11:58:26.025 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.036 127.0.0.1:54321       19935  FJ-1-7    INFO: 14. tree was built in 00:00:00.010 (Wall: 28-Oct 11:58:26.036) 
+10-28 11:58:26.036 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.044 127.0.0.1:54321       19935  FJ-1-7    INFO: 15. tree was built in 00:00:00.006 (Wall: 28-Oct 11:58:26.044) 
+10-28 11:58:26.045 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.052 127.0.0.1:54321       19935  FJ-1-7    INFO: 16. tree was built in 00:00:00.005 (Wall: 28-Oct 11:58:26.052) 
+10-28 11:58:26.055 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.064 127.0.0.1:54321       19935  FJ-1-7    INFO: 17. tree was built in 00:00:00.006 (Wall: 28-Oct 11:58:26.064) 
+10-28 11:58:26.065 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.073 127.0.0.1:54321       19935  FJ-1-7    INFO: 18. tree was built in 00:00:00.006 (Wall: 28-Oct 11:58:26.073) 
+10-28 11:58:26.073 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.086 127.0.0.1:54321       19935  FJ-1-7    INFO: 19. tree was built in 00:00:00.011 (Wall: 28-Oct 11:58:26.086) 
+10-28 11:58:26.087 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.094 127.0.0.1:54321       19935  FJ-1-7    INFO: 20. tree was built in 00:00:00.005 (Wall: 28-Oct 11:58:26.094) 
+10-28 11:58:26.094 127.0.0.1:54321       19935  FJ-1-7    INFO: ============================================================== 
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: Metrics reported on Out-Of-Bag training samples
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_6
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_2
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: 0.37157005
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: 0.6095655
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: 2.9572327
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.49683473
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.69, 0.8, 0.85, 0.86, 0.89, 0.89, 0.89, 0.89, 0.9, 0.9]
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp    27     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 27
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     4     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0  0.2000     1 / 5
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     2     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     4 / 4
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     1     0     0    15     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  0.1176    2 / 17
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     1     0     0     0     0     0     0     0     0     1     0     0     1     0     0  1.0000     3 / 3
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     0     0     0     0     0     8     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 8
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     1     5     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0  0.8571     6 / 7
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0  0.0000     0 / 2
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     0     0     0     0     0     0     2     0     0     0     1     0     0     0     0     0     0  0.3333     1 / 3
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     2 / 2
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     1     0     0     1     1     0     1     0     0     0     0     0     0     0     2     0     0     0     0     0  0.6667     4 / 6
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0  0.0000     0 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0  0.0000     0 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     4     0     0  0.4286     3 / 7
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0  0.3333     1 / 3
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals    31     4     1    28     1     9     5     2     0     2     0     0     0     2     3     1     1     7     3     0  0.3100  31 / 100
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Metrics Type: Multinomial
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  Description: N/A
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  model id: DRF_model_R_1477647427014_6
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  frame id: RTMP_sid_8a78_4
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  MSE: 0.44767797
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  RMSE: 0.6690874
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  logloss: 2.5487342
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  mean_per_class_error: 0.33166668
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  hit ratios: [0.5769231, 0.7692308, 0.80769235, 0.80769235, 0.8461539, 0.923077, 0.923077, 0.923077, 0.923077, 0.923077]
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error     Rate
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   bspp     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 6
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   espp     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   iacu     0     0     1     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.3333    1 / 3
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipas     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   ipat     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 2
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   istr     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   ists     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmac     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   lmas     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   nlab     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   oces     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   poll     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000    1 / 1
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   pols     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   snep     1     0     0     0     0     0     0     1     0     0     0     1     0     0     1     0     0     1     0     0  0.8000    4 / 5
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   spsp     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  0.5000    1 / 2
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   squa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0  0.0000    0 / 2
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   strs     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN    0 / 0
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: Totals     7     1     1     7     0     2     0     1     0     0     0     1     0     0     2     0     0     2     2     0  0.4231  11 / 26
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: Variable Importances:
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:        Variable Relative Importance Scaled Importance Percentage
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_sen_s1          156.828979          1.000000   0.122893
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:      x_Ba_b_q05           94.511192          0.602639   0.074060
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_f13_s1           80.584038          0.513834   0.063147
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_Ba_b_q099           75.624352          0.482209   0.059260
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:      x_0_s_area           68.955406          0.439685   0.054034
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:        h_cor_s2           68.033646          0.433808   0.053312
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:       x_Ba_m_cy           59.152481          0.377178   0.046353
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: x_0_s_perimeter           51.385067          0.327650   0.040266
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:       x_Ba_m_cx           48.534634          0.309475   0.038032
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:        h_dva_s2           43.429859          0.276925   0.034032
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: ---
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_a_m_theta           27.553997          0.175695   0.021592
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_idm_s2           25.592438          0.163187   0.020055
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_Ba_b_q001           24.920296          0.158901   0.019528
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_Ba_b_q005           24.789633          0.158068   0.019425
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_f12_s2           24.361938          0.155341   0.019090
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:        h_var_s2           23.776802          0.151610   0.018632
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:     x_0_m_theta           20.418026          0.130193   0.016000
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:   x_Ba_h_cor_s1           19.714306          0.125706   0.015448
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:      x_Ba_b_mad           14.298422          0.091172   0.011204
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:       x_a_b_mad           10.836752          0.069099   0.008492
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: Model Summary:
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  Number of Trees Number of Internal Trees Model Size in Bytes Min. Depth Max. Depth Mean Depth Min. Leaves Max. Leaves Mean Leaves
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:               20                      380               44091          1          5    2.73158           2          11     4.24474
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO: Scoring History:
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:            Timestamp   Duration Number of Trees Training RMSE Training LogLoss Training Classification Error Validation RMSE Validation LogLoss Validation Classification Error
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.009 sec               0           NaN              NaN                           NaN             NaN                NaN                             NaN
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.274 sec               1       0.62948         11.34068                       0.51613         0.73885           17.39846                         0.65385
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.316 sec               2       0.65116          9.44741                       0.51613         0.64597            7.32256                         0.53846
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.346 sec               3       0.66550         10.59543                       0.49333         0.64082            7.32395                         0.38462
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.369 sec               4       0.66243          9.74854                       0.50000         0.65411            6.14415                         0.30769
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.397 sec               5       0.67314         10.11725                       0.48889         0.65178            6.15050                         0.34615
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.424 sec               6       0.66072          9.42820                       0.44086         0.65651            5.03540                         0.30769
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.436 sec               7       0.63263          6.77145                       0.42708         0.66153            3.83947                         0.34615
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.449 sec               8       0.63770          6.67378                       0.42857         0.66485            3.86642                         0.30769
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.460 sec               9       0.63397          6.28572                       0.40404         0.66466            3.88193                         0.34615
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.470 sec              10       0.63907          6.25430                       0.38000         0.67076            3.89364                         0.38462
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:25  0.480 sec              11       0.64700          6.26684                       0.40000         0.67184            3.76673                         0.38462
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.493 sec              12       0.63841          5.61971                       0.36000         0.67218            3.78297                         0.34615
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.508 sec              13       0.63522          5.26343                       0.35000         0.66803            3.75314                         0.30769
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.520 sec              14       0.62725          4.28823                       0.31000         0.66447            2.52685                         0.30769
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.528 sec              15       0.62253          3.95525                       0.31000         0.67326            2.55696                         0.34615
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.536 sec              16       0.62185          3.95293                       0.31000         0.68044            2.59031                         0.34615
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.548 sec              17       0.61465          3.29380                       0.32000         0.67510            2.56106                         0.34615
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.557 sec              18       0.61255          3.28887                       0.31000         0.67170            2.55207                         0.38462
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.570 sec              19       0.61371          3.29815                       0.32000         0.67299            2.56203                         0.42308
+10-28 11:58:26.103 127.0.0.1:54321       19935  FJ-1-7    INFO:  2016-10-28 11:58:26  0.578 sec              20       0.60957          2.95723                       0.31000         0.66909            2.54873                         0.42308
+10-28 11:58:26.819 127.0.0.1:54321       19935  #4490-194 INFO: GET /3/Models/DRF_model_R_1477647427014_6, parms: {}
+10-28 12:08:17.601 127.0.0.1:54321       19935  #4490-196 INFO: GET /3/ModelBuilders/deeplearning, parms: {}
+10-28 12:08:17.916 127.0.0.1:54321       19935  #4490-198 INFO: POST /3/ModelBuilders/deeplearning, parms: {input_dropout_ratio=0.7, epochs=15, training_frame=RTMP_sid_8a78_2, activation=Rectifier, hidden=[21,5,21], response_column=rNames_tag, ignored_columns=[""]}
+10-28 12:08:17.968 127.0.0.1:54321       19935  FJ-1-1    INFO: Building H2O DeepLearning model with these parameters:
+10-28 12:08:17.978 127.0.0.1:54321       19935  FJ-1-1    INFO: {"_train":{"name":"RTMP_sid_8a78_2","type":"Key"},"_valid":null,"_nfolds":0,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":-1,"_fold_assignment":"AUTO","_categorical_encoding":"AUTO","_distribution":"AUTO","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":[""],"_ignore_const_cols":true,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":5,"_stopping_metric":"AUTO","_stopping_tolerance":0.0,"_response_column":"rNames_tag","_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_overwrite_with_best_model":true,"_autoencoder":false,"_use_all_factor_levels":true,"_standardize":true,"_activation":"Rectifier","_hidden":[21,5,21],"_epochs":15.0,"_train_samples_per_iteration":-2,"_target_ratio_comm_to_comp":0.05,"_adaptive_rate":true,"_rho":0.99,"_epsilon":1.0E-8,"_rate":0.005,"_rate_annealing":1.0E-6,"_rate_decay":1.0,"_momentum_start":0.0,"_momentum_ramp":1000000.0,"_momentum_stable":0.0,"_nesterov_accelerated_gradient":true,"_input_dropout_ratio":0.7,"_hidden_dropout_ratios":null,"_l1":0.0,"_l2":0.0,"_max_w2":"Infinity","_initial_weight_distribution":"UniformAdaptive","_initial_weight_scale":1.0,"_initial_weights":null,"_initial_biases":null,"_loss":"Automatic","_score_interval":5.0,"_score_training_samples":10000,"_score_validation_samples":0,"_score_duty_cycle":0.1,"_classification_stop":0.0,"_regression_stop":1.0E-6,"_quiet_mode":false,"_score_validation_sampling":"Uniform","_diagnostics":true,"_variable_importances":false,"_fast_mode":true,"_force_load_balance":true,"_replicate_training_data":true,"_single_node_mode":false,"_shuffle_training_data":false,"_missing_values_handling":"MeanImputation","_sparse":false,"_col_major":false,"_average_activation":0.0,"_sparsity_beta":0.0,"_max_categorical_features":2147483647,"_reproducible":false,"_export_weights_and_biases":false,"_elastic_averaging":false,"_elastic_averaging_moving_rate":0.9,"_elastic_averaging_regularization":0.001,"_mini_batch_size":1}
+10-28 12:08:18.016 127.0.0.1:54321       19935  FJ-1-1    INFO: Dropping ignored columns: []
+10-28 12:08:18.016 127.0.0.1:54321       19935  FJ-1-1    INFO: Rebalancing train dataset into 16 chunks.
+10-28 12:08:18.173 127.0.0.1:54321       19935  FJ-1-1    INFO: _replicate_training_data: Disabling replicate_training_data on 1 node.
+10-28 12:08:18.173 127.0.0.1:54321       19935  FJ-1-1    INFO: _categorical_encoding: Automatically enabling OneHotInternal categorical encoding.
+10-28 12:08:18.173 127.0.0.1:54321       19935  FJ-1-1    INFO: _adaptive_rate: Using automatic learning rate. Ignoring the following input parameters: rate, rate_decay, rate_annealing, momentum_start, momentum_ramp, momentum_stable.
+10-28 12:08:18.173 127.0.0.1:54321       19935  FJ-1-1    INFO: _max_w2: Automatically setting max_w2 to 1000 to keep (unbounded) Rectifier activation in check.
+10-28 12:08:18.201 127.0.0.1:54321       19935  FJ-1-1    INFO: Created random initial model state.
+10-28 12:08:18.201 127.0.0.1:54321       19935  FJ-1-1    INFO: Model category: Classification
+10-28 12:08:18.201 127.0.0.1:54321       19935  FJ-1-1    INFO: Number of model parameters (weights/biases): 1,327
+10-28 12:08:18.201 127.0.0.1:54321       19935  FJ-1-1    INFO: One epoch corresponds to 100 training data rows.
+10-28 12:08:18.203 127.0.0.1:54321       19935  FJ-1-1    INFO: Number of chunks of the training data: 16
+10-28 12:08:18.210 127.0.0.1:54321       19935  FJ-1-1    INFO: Auto-tuning parameter 'train_samples_per_iteration':
+10-28 12:08:18.210 127.0.0.1:54321       19935  FJ-1-1    INFO: Estimated compute power : 4 GFlops
+10-28 12:08:18.210 127.0.0.1:54321       19935  FJ-1-1    INFO: Estimated time for comm :  10.064 msec
+10-28 12:08:18.210 127.0.0.1:54321       19935  FJ-1-1    INFO: Estimated time per row  :  20 usec
+10-28 12:08:18.210 127.0.0.1:54321       19935  FJ-1-1    INFO: Estimated training speed: 48958 rows/sec
+10-28 12:08:18.210 127.0.0.1:54321       19935  FJ-1-1    INFO: Setting train_samples_per_iteration (-2) to auto-tuned value: 150
+10-28 12:08:18.211 127.0.0.1:54321       19935  FJ-1-1    INFO: Total setup time:  0.243 sec
+10-28 12:08:18.211 127.0.0.1:54321       19935  FJ-1-1    INFO: Starting to train the Deep Learning model.
+10-28 12:08:18.260 127.0.0.1:54321       19935  FJ-1-1    INFO: Scoring the model.
+10-28 12:08:18.302 127.0.0.1:54321       19935  FJ-1-1    INFO: Status of Neuron Layers (predicting rNames_tag, 20-class classification, multinomial distribution, CrossEntropy loss, 1,327 weights/biases, 20.6 KB, 160 training samples, mini-batch size 1):
+10-28 12:08:18.302 127.0.0.1:54321       19935  FJ-1-1    INFO:  Layer Units      Type Dropout       L1       L2 Mean Rate Rate RMS Momentum Mean Weight Weight RMS Mean Bias Bias RMS
+10-28 12:08:18.302 127.0.0.1:54321       19935  FJ-1-1    INFO:      1    30     Input 70.00 %                                                                                        
+10-28 12:08:18.302 127.0.0.1:54321       19935  FJ-1-1    INFO:      2    21 Rectifier       0 0.000000 0.000000  0.001971 0.001141 0.000000    0.008085   0.202744  0.521554 0.101508
+10-28 12:08:18.302 127.0.0.1:54321       19935  FJ-1-1    INFO:      3     5 Rectifier       0 0.000000 0.000000  0.000982 0.000460 0.000000   -0.057080   0.250464  0.992224 0.051215
+10-28 12:08:18.302 127.0.0.1:54321       19935  FJ-1-1    INFO:      4    21 Rectifier       0 0.000000 0.000000  0.001486 0.001198 0.000000   -0.003354   0.283367  0.982899 0.051216
+10-28 12:08:18.302 127.0.0.1:54321       19935  FJ-1-1    INFO:      5    20   Softmax         0.000000 0.000000  0.059133 0.191017 0.000000   -0.002050   0.917211 -0.031244 0.040934
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Metrics Type: Multinomial
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  Description: Metrics reported on full training frame
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  model id: DeepLearning_model_R_1477647427014_7
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  frame id: RTMP_sid_8a78_2
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  MSE: 0.74497426
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  RMSE: 0.8631189
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  logloss: 4.691197
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  mean_per_class_error: 0.88412696
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  hit ratios: [0.27, 0.35000002, 0.41000003, 0.45000002, 0.5, 0.57, 0.58, 0.59999996, 0.62999994, 0.67999995]
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   bspp    24     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     3     0     0  0.1111    3 / 27
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   espp     2     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     5 / 5
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacs     4     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     4 / 4
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacu    17     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000   17 / 17
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipas     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipat     8     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     8 / 8
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   istr     7     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     7 / 7
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   ists     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmas     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     3 / 3
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   nlab     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   oces     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   poll     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   pols     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   snep     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     6 / 6
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   sppa     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   spps     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     1 / 1
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   spsp     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     3     1     0  0.5714     4 / 7
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   squa     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0  1.0000     3 / 3
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:   strs     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO: Totals    85     0     0     0     4     0     0     0     0     0     0     0     0     0     0     0     0    10     1     0  0.7300  73 / 100
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO: Status of Neuron Layers (predicting rNames_tag, 20-class classification, multinomial distribution, CrossEntropy loss, 1,327 weights/biases, 23.3 KB, 160 training samples, mini-batch size 1):
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  Layer Units      Type Dropout       L1       L2 Mean Rate Rate RMS Momentum Mean Weight Weight RMS Mean Bias Bias RMS
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:      1    30     Input 70.00 %                                                                                        
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:      2    21 Rectifier       0 0.000000 0.000000  0.001971 0.001141 0.000000    0.008085   0.202744  0.521554 0.101508
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:      3     5 Rectifier       0 0.000000 0.000000  0.000982 0.000460 0.000000   -0.057080   0.250464  0.992224 0.051215
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:      4    21 Rectifier       0 0.000000 0.000000  0.001486 0.001198 0.000000   -0.003354   0.283367  0.982899 0.051216
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:      5    20   Softmax         0.000000 0.000000  0.059133 0.191017 0.000000   -0.002050   0.917211 -0.031244 0.040934
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO: Scoring History:
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:            Timestamp   Duration Training Speed  Epochs Iterations    Samples Training RMSE Training LogLoss Training Classification Error
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 12:08:18  0.000 sec                0.00000          0   0.000000           NaN              NaN                           NaN
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 12:08:18  0.347 sec  3265 rows/sec 1.60000          1 160.000000       0.86312          4.69120                       0.73000
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO: Time taken for scoring and diagnostics:  0.055 sec
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO: Training time:  0.359 sec (scoring:  0.055 sec). Processed 160 samples (1.600 epochs).
+10-28 12:08:18.326 127.0.0.1:54321       19935  FJ-1-1    INFO: Iterations: 1. Epochs: 1.60000. Speed: 2,622 samples/sec.
+10-28 12:08:18.400 127.0.0.1:54321       19935  FJ-1-1    INFO: Scoring the model.
+10-28 12:08:18.402 127.0.0.1:54321       19935  FJ-1-1    INFO: Status of Neuron Layers (predicting rNames_tag, 20-class classification, multinomial distribution, CrossEntropy loss, 1,327 weights/biases, 23.3 KB, 1,510 training samples, mini-batch size 1):
+10-28 12:08:18.402 127.0.0.1:54321       19935  FJ-1-1    INFO:  Layer Units      Type Dropout       L1       L2 Mean Rate Rate RMS Momentum Mean Weight Weight RMS Mean Bias Bias RMS
+10-28 12:08:18.402 127.0.0.1:54321       19935  FJ-1-1    INFO:      1    30     Input 70.00 %                                                                                        
+10-28 12:08:18.402 127.0.0.1:54321       19935  FJ-1-1    INFO:      2    21 Rectifier       0 0.000000 0.000000  0.001828 0.000925 0.000000    0.008219   0.202536  0.519502 0.161256
+10-28 12:08:18.402 127.0.0.1:54321       19935  FJ-1-1    INFO:      3     5 Rectifier       0 0.000000 0.000000  0.000925 0.000393 0.000000   -0.050005   0.248368  1.013670 0.085139
+10-28 12:08:18.402 127.0.0.1:54321       19935  FJ-1-1    INFO:      4    21 Rectifier       0 0.000000 0.000000  0.001384 0.000932 0.000000   -0.023660   0.282842  0.961020 0.110603
+10-28 12:08:18.402 127.0.0.1:54321       19935  FJ-1-1    INFO:      5    20   Softmax         0.000000 0.000000  0.028601 0.121267 0.000000   -0.047939   0.903914 -0.085394 0.126873
+10-28 12:08:18.415 127.0.0.1:54321       19935  FJ-1-1    INFO: Time taken for scoring and diagnostics:  0.009 sec
+10-28 12:08:18.415 127.0.0.1:54321       19935  FJ-1-1    INFO: Training time:  0.448 sec (scoring:  0.064 sec). Processed 1,510 samples (15.100 epochs).
+10-28 12:08:18.415 127.0.0.1:54321       19935  FJ-1-1    INFO: Iterations: 10. Epochs: 15.1000. Speed: 10,709 samples/sec. Estimated time left:  0.049 sec
+10-28 12:08:18.416 127.0.0.1:54321       19935  FJ-1-1    INFO: ==============================================================================================================================================================================
+10-28 12:08:18.416 127.0.0.1:54321       19935  FJ-1-1    INFO: Finished training the Deep Learning model.
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO: Model Metrics Type: Multinomial
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  Description: Metrics reported on full training frame
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  model id: DeepLearning_model_R_1477647427014_7
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  frame id: RTMP_sid_8a78_2
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  MSE: 0.5659371
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  RMSE: 0.7522879
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  logloss: 1.9580243
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  mean_per_class_error: 0.83845586
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  hit ratios: [0.42, 0.53, 0.62, 0.68, 0.74, 0.76, 0.81, 0.81, 0.82, 0.87]
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  CM: Confusion Matrix (vertical: actual; across: predicted):
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:         bspp  espp  iacs  iacu  ipas  ipat  istr  ists  lmac  lmas  nlab  oces  poll  pols  snep  sppa  spps  spsp  squa  strs   Error      Rate
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   bspp    27     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.0000    0 / 27
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   espp     0     2     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.6000     3 / 5
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacs     1     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     4 / 4
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   iacu     3     0     0    12     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0  0.2941    5 / 17
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipas     2     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   ipat     4     0     0     3     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0  0.8750     7 / 8
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   istr     1     0     0     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     7 / 7
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   ists     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmac     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     NaN     0 / 0
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   lmas     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     3 / 3
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   nlab     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   oces     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   poll     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     2 / 2
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   pols     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   snep     5     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     6 / 6
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   sppa     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   spps     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   spsp     1     0     0     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     7 / 7
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   squa     1     0     0     1     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0  1.0000     3 / 3
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:   strs     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  1.0000     1 / 1
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO: Totals    47     2     0    47     0     1     0     0     0     0     0     2     0     1     0     0     0     0     0     0  0.5800  58 / 100
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO: Status of Neuron Layers (predicting rNames_tag, 20-class classification, multinomial distribution, CrossEntropy loss, 1,327 weights/biases, 23.3 KB, 1,510 training samples, mini-batch size 1):
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  Layer Units      Type Dropout       L1       L2 Mean Rate Rate RMS Momentum Mean Weight Weight RMS Mean Bias Bias RMS
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:      1    30     Input 70.00 %                                                                                        
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:      2    21 Rectifier       0 0.000000 0.000000  0.001828 0.000925 0.000000    0.008219   0.202536  0.519502 0.161256
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:      3     5 Rectifier       0 0.000000 0.000000  0.000925 0.000393 0.000000   -0.050005   0.248368  1.013670 0.085139
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:      4    21 Rectifier       0 0.000000 0.000000  0.001384 0.000932 0.000000   -0.023660   0.282842  0.961020 0.110603
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:      5    20   Softmax         0.000000 0.000000  0.028601 0.121267 0.000000   -0.047939   0.903914 -0.085394 0.126873
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO: Scoring History:
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:            Timestamp   Duration Training Speed   Epochs Iterations     Samples Training RMSE Training LogLoss Training Classification Error
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 12:08:18  0.000 sec                 0.00000          0    0.000000           NaN              NaN                           NaN
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 12:08:18  0.347 sec  3265 rows/sec  1.60000          1  160.000000       0.86312          4.69120                       0.73000
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO:  2016-10-28 12:08:18  0.442 sec 11185 rows/sec 15.10000         10 1510.000000       0.75229          1.95802                       0.58000
+10-28 12:08:18.421 127.0.0.1:54321       19935  FJ-1-1    INFO: ==============================================================================================================================================================================
+10-28 12:08:19.179 127.0.0.1:54321       19935  #4490-195 INFO: GET /3/Models/DeepLearning_model_R_1477647427014_7, parms: {}
+10-28 12:08:30.220 127.0.0.1:54321       19935  #4490-197 INFO: POST /3/ModelMetrics/models/DeepLearning_model_R_1477647427014_7/frames/RTMP_sid_8a78_4, parms: {model=DeepLearning_model_R_1477647427014_7, frame=RTMP_sid_8a78_4}
+10-28 12:18:13.364 127.0.0.1:54321       19935  #4490-192 INFO: POST /99/Rapids, parms: {ast=(rm RTMP_sid_8a78_4), session_id=_sid_8a78}
+10-28 12:18:13.553 127.0.0.1:54321       19935  #4490-194 INFO: POST /99/Rapids, parms: {ast=(rm RTMP_sid_8a78_2), session_id=_sid_8a78}
+10-28 12:18:13.766 127.0.0.1:54321       19935  #4490-196 INFO: POST /99/Rapids, parms: {ast=(rm RTMP_sid_8a78_1), session_id=_sid_8a78}
