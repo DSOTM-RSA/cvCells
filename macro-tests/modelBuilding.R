@@ -27,11 +27,10 @@ library(dplyr)
 sc <- spark_connect(master = "local") 
 
 
-# TODO: function to determine which system I'm on and set for read path 
-
 # load feature data-set (trimmed un-correlate feats)
-features_tbl <- spark_read_csv(sc, name = 'featLib', path = '~/Research/cvCells/macro-tests/in-grey-seg/array.all.trim.csv')
-features_tbl <- spark_read_csv(sc, name = 'featLib', path = "~/Documents/GitArchive/cvCells/macro-tests/in-grey-seg/array.all.trim.csv")
+where <- getwd()
+features_tbl <- spark_read_csv(sc, name = 'featLib', path = paste0(where,"/array.all.trim.csv"))
+
 
 
 # building a full random forest
@@ -55,9 +54,7 @@ table(ft_string2idx$rNames_idx,ft_string2idx$rNames_remap) # show mapping
 # Part Two: Using H2o ML ----
 
 partitions <- features_tbl %>% 
-  sdf_partition(training = 0.75, test = 0.5, seed = 1099)
-
-dat.H2o.train <- as_h2o_frame(sc, features_tbl)
+  sdf_partition(training = 0.75, test = 0.5, seed = 1099) # partioning into train and test using Spark data-frame framework
 
 training <- as_h2o_frame(sc, partitions$training)
 test <- as_h2o_frame(sc, partitions$test)
@@ -86,6 +83,8 @@ x <- setdiff(names(dat.H2o.train), y)
 dat.H2o.train[,y] <- as.factor(dat.H2o.train[,y])
 
 
+# split into training and testing in H20 frameowrk
+dat.H2o.train <- as_h2o_frame(sc, features_tbl)
 splits <- h2o.splitFrame(dat.H2o.train, seed = 1)
 
 
@@ -98,7 +97,8 @@ rf_model <- h2o.randomForest(x = x,
                              ntrees = 20,
                              seed = 1)
 
-h2o.confusionMatrix(rf_model, valid = TRUE)
+h2o.confusionMatrix(rf_model) # metrics on full data-set : potenital peak accuracy
+h2o.confusionMatrix(rf_model, valid = TRUE) # metrics on test set : production setting
 
 # get variable importance
 h2o.varimp_plot(rf_model)
@@ -114,18 +114,6 @@ gbm_model <- h2o.gbm(x = x,
                      col_sample_rate = 0.7,
                      seed = 1)
 
-h2o.confusionMatrix(gbm_model, valid = TRUE)
+h2o.confusionMatrix(gbm_model) # metrics on full data-set : potenital peak accuracy
+h2o.confusionMatrix(gbm_model, valid = TRUE) # metrics on test set : production setting
 
-
-# deep learning test
-
-dl_fit <- h2o.deeplearning(x = x, y = y,
-                           training_frame = splits[[1]],
-                           epochs = 15,
-                           activation = "Rectifier",
-                           hidden = c(21, 5, 21),
-                           input_dropout_ratio = 0.7)
-
-
-h2o.performance(dl_fit, newdata = splits[[2]])
-h2o.performance(dl_fit)
