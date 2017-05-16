@@ -1,63 +1,24 @@
-# preProcess - Multiclass: preProcessing in caret
+############################
+# Analysis Two: Using H2o ML ----
 
-library(caret)
-load("array-all.Rdata")
-
-# indentifying correlated parameters (i.e not for PLS)
-feats <- array.dfs[c(-1,-2,-3)] # remove x and y pos and factor
-descrCor <- cor(feats)
-highlyCorDescr <- findCorrelation(descrCor, cutoff = .95)
-filteredDescr <- feats[,-highlyCorDescr]
-array.all.trim<-cbind(array.dfs[1],filteredDescr)
-
-write.csv(array.all.trim,file = "array.all.trim.csv",row.names = FALSE) # write out feature matrix to .csv
-
-rm(array.dfs,feats,descrCor,highlyCorDescr,filteredDescr,array.all.trim) #clean up
-
-
-# Part One: Using Spark ML ----
-
-# load libraries
-library(sparklyr) # first for linux: may have to move pre-process
+# order for single use H20
 library(rsparkling)
-library(h2o)
+library(sparklyr)
 library(dplyr)
+library(h2o)
 
 # connect to spark instance
-sc <- spark_connect(master = "local") 
-
+sc <- spark_connect(master = "local",version="1.6.2") 
 
 # load feature data-set (trimmed un-correlate feats)
 where <- getwd()
 features_tbl <- spark_read_csv(sc, name = 'featLib', path = paste0(where,"/array.all.trim.csv"))
 
-
-
-# building a full random forest
-rf_full_model <- features_tbl %>% 
-  ml_random_forest(rNames_tag ~., type = "classification")
-
-# make predictions
-rf_full_predict <- sdf_predict(rf_full_model, features_tbl) %>% 
-  ft_string_indexer("rNames_tag","rNames_idx") %>% collect
-
-table(rf_full_predict$rNames_idx,rf_full_predict$prediction) # print the classification results
-
-ft_string2idx <- features_tbl %>% # mapping of labels to indicies
-  ft_string_indexer("rNames_tag", "rNames_idx") %>%
-  ft_index_to_string("rNames_idx", "rNames_remap") %>%
-  collect
-
-table(ft_string2idx$rNames_idx,ft_string2idx$rNames_remap) # show mapping
-
-
-# Part Two: Using H2o ML ----
-
 partitions <- features_tbl %>% 
   sdf_partition(training = 0.75, test = 0.5, seed = 1099) # partioning into train and test using Spark data-frame framework
 
-training <- as_h2o_frame(sc, partitions$training)
-test <- as_h2o_frame(sc, partitions$test)
+training <- as_h2o_frame(sc, partitions$training,strict_version_check = FALSE) # make H2O dataframes
+test <- as_h2o_frame(sc, partitions$test,strict_version_check = FALSE) # make H20 dataframes
 
 # kmeans test
 kmeans_model <- h2o.kmeans(training_frame = training, 
@@ -77,14 +38,13 @@ print(pca_model)
 
 
 # RF test
-
+dat.H2o.train <- as_h2o_frame(sc, features_tbl,strict_version_check = FALSE)
 y <- "rNames_tag"
 x <- setdiff(names(dat.H2o.train), y)
 dat.H2o.train[,y] <- as.factor(dat.H2o.train[,y])
 
 
 # split into training and testing in H20 frameowrk
-dat.H2o.train <- as_h2o_frame(sc, features_tbl)
 splits <- h2o.splitFrame(dat.H2o.train, seed = 1)
 
 
@@ -101,7 +61,7 @@ h2o.confusionMatrix(rf_model) # metrics on full data-set : potenital peak accura
 h2o.confusionMatrix(rf_model, valid = TRUE) # metrics on test set : production setting
 
 # get variable importance
-h2o.varimp_plot(rf_model)
+h2o.varimp_plot(rf_model,num_of_features = 10)
 
 # GBM test
 gbm_model <- h2o.gbm(x = x, 
@@ -116,4 +76,24 @@ gbm_model <- h2o.gbm(x = x,
 
 h2o.confusionMatrix(gbm_model) # metrics on full data-set : potenital peak accuracy
 h2o.confusionMatrix(gbm_model, valid = TRUE) # metrics on test set : production setting
+
+# get variable importance
+h2o.varimp_plot(gbm_model,num_of_features = 10)
+
+
+
+# deep-learning test
+deep_model <- h2o.deeplearning(x = x, y = y, training_frame = splits[[1]],
+                               validation_frame = splits[[2]],
+                               epochs=60, 
+                               variable_importances = TRUE,
+                               max_runtime_secs=30)
+
+deep_predictions <- h2o.predict(deep_model, splits[[1]])
+
+# get variable importance
+h2o.varimp_plot(gbm_model,num_of_features = 10)
+
+h2o.confusionMatrix(deep_model) # metrics on full data-set : potenital peak accuracy
+h2o.confusionMatrix(deep_model, valid = TRUE) # metrics on test set : production setting
 

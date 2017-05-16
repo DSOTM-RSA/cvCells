@@ -34,7 +34,7 @@ for (i in beg:end){
   seg.array <-readImage(segs.all[i])
   seg.labelled <-bwlabel(seg.array)
   
-  # contruct holders for feature-results
+  # construct holders for feature-results
   writer.1 <-paste0("shapes",i)
   writer.2 <-paste0("textures",i)
   
