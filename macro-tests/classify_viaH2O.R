@@ -91,9 +91,21 @@ deep_model <- h2o.deeplearning(x = x, y = y, training_frame = splits[[1]],
 
 deep_predictions <- h2o.predict(deep_model, splits[[1]])
 
+
+deeper_model <- h2o.deeplearning(x = x, y = y, training_frame = splits[[1]],
+                               validation_frame = splits[[2]],
+                               epochs=60, hidden = c(64,64),
+                               variable_importances = TRUE,
+                               max_runtime_secs=30)
+
+deeper_predictions <- h2o.predict(deeper_model, splits[[1]])
+
 # get variable importance
 h2o.varimp_plot(gbm_model,num_of_features = 10)
 
 h2o.confusionMatrix(deep_model) # metrics on full data-set : potenital peak accuracy
 h2o.confusionMatrix(deep_model, valid = TRUE) # metrics on test set : production setting
+
+h2o.confusionMatrix(deeper_model) # metrics on full data-set : potenital peak accuracy
+h2o.confusionMatrix(deeper_model, valid = TRUE) # metrics on test set : production setting
 
