@@ -1,0 +1,32 @@
+for file in /tmp/p/DSC*.JPG; do
+  convert "$file" -rotate 90 "${file%.JPG}"_rotated.JPG
+done
+
+
+  # Use a simple shell loop, to process each of the images.
+  mkdir thumbnails
+  for f in *.jpg
+  do   convert $f -thumbnail 200x90 thumbnails/$f.gif
+  done
+
+  # Use find to substitute filenames into a 'convert' command.
+  # This also provides the ability to recurse though directories by removing
+  # the -prune option, as well as doing other file checks (like image type,
+  # or the disk space used by an image).
+  find * -prune -name '*.jpg' \
+         -exec  convert '{}' -thumbnail 200x90 thumbnails/'{}'.gif \;
+
+  # Use xargs -- with a shell wrapper to put the argument into a variable
+  # This can be combined with either "find" or "ls" to list filenames.
+  ls *.jpg | xargs -n1 sh -c 'convert $0 -thumbnail 200x90 thumbnails/$0.gif'
+
+  # An alternative method on linux (rather than plain unix)
+  # This does not need a shell to handle the argument.
+  ls *.jpg | xargs -r -I FILE   convert FILE -thumbnail 200x90 FILE_thumb.gif
+
+
+And so on.
+I recommend the use of both "find" and "xargs" for doing recursive or even non-recursive file processing. Read their man pages. For a quick introduction see this IM Discussion Post, as well as the guide Xargs - Wikipedia which includes information on the dangers involved.
+If your commands start to get more complicated than this, it may be time to go to a shell script, or API program, to read in multiple images, gather information, calculate appropriate arguments, and process the images.
+I also recommend a good look at the "parellel" command (typically a drop in replacement for "xargs"). this can not only let you run multiple commands simultaniously, but can with a little work run each command on different computers, allowing you to do network distributed processing of a very large number of tasks.
+For Windows Users I refer you to the Windows Usage section, and in particular Windows, Batch Processing Several Files.
