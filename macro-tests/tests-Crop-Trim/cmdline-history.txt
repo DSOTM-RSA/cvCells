@@ -1,0 +1,500 @@
+   82  git push
+   83  git status
+   84  git commit -am "final titbits to compiledManuscript"
+   85  git push
+   86  git status
+   87  git add -A
+   88  git commit -am "cleaning, added PABLO"
+   89  git push
+   90  cd ..
+   91  brew update
+   92  brew outdated
+   93  brew upgrade
+   94  sudo port -v selfupdate
+   95  sudo port upgrade outdated
+   96  cd bigData/
+   97  git status
+   98  git add -A
+   99  git commit -am "updated runTrack for summary"
+  100  git push
+  101  cd ..
+  102  cd workShop/
+  103  git status
+  104  git add -A
+  105  git commit -am "cleaned"
+  106  git push
+  107  brew update
+  108  brew outdated
+  109  brew upgrade
+  110  sudo port -v selfupdate
+  111  sudo port upgrade outdated
+  112  cd ..
+  113  cd MAP/
+  114  git status
+  115  git add -A
+  116  git commit -am "run through for review"
+  117  git push
+  118  git status
+  119  cd ..
+  120  cd codeSnippets/
+  121  git status
+  122  git add -A
+  123  git commit -am "manyModels in the tidyverse"
+  124  git push
+  125  cd ..
+  126  cd MAP/
+  127  git status
+  128  git status
+  129  git add -A
+  130  git commit -am "dt: 690-6, A (41) series"
+  131  git push
+  132  git status
+  133  git commit -am "added data"
+  134  git push
+  135  git status
+  136  git commit -am "added slides 695/6" 
+  137  git push
+  138  cd ..
+  139  cd bigData/
+  140  git pull
+  141  cd ..
+  142  cd MAP/
+  143  git status
+  144  git add -A
+  145  git commit -am "CV concentrations ggplot2 deved"
+  146  git push
+  147  docker run -d -p 4445:4444 selenium/standalone-firefox:3.0.1
+  148  cd ..
+  149  cd webApps/
+  150  git status
+  151  git add -A
+  152  git commit -am "check run march"
+  153  git push
+  154  cd ..
+  155  cd MAP/
+  156  git status
+  157  git commit -am "added some data and cv_spec plot"
+  158  git status
+  159  git push
+  160  docker run -d -p 4445:4444 selenium/standalone-firefox:3.0.1
+  161  cd ..
+  162  history > history.txt
+  163  docker run -d -p 4445:4444 selenium/standalone-firefox:3.0.1
+  164  cd webApps/
+  165  ls
+  166  cd stepSequences/
+  167  ls
+  168  for f in *.txt; do sed -i -e '1,$s/$/'"\,$f"'/' $f; done
+  169  for f in *.txt;  do sed -i '1,$s/$/'"\,$f"'/' $f; done
+  170  for f in *.txt; do sed -i -e '1,$s/$/'"\,$f"'/' $f; done
+  171  cd ..
+  172  git status
+  173  git add -A
+  174  git commit -am "debugged"
+  175  git push
+  176  cd .. 
+  177   cd bigData/
+  178  git pull
+  179  cd ..
+  180  cd MAP/
+  181  git status
+  182  git commit -am "need fixes in plots for high res samples"
+  183  git push
+  184  git status
+  185  git commit -am "figuring out shifts in scale"
+  186  git push
+  187  git status
+  188  git add -A
+  189  git commit -am "fixed time-scales"
+  190  git push
+  191  git status
+  192  git add -A
+  193  git commit -am "improved diag plots added dat 694.5(42)"
+  194  git push
+  195  cd ..
+  196  cd bigData/
+  197  git status
+  198  git pull
+  199  git add -A
+  200  git commit -am "changes to runTrack mac merge"
+  201  git pull
+  202  git status
+  203  git add runTrack/binsIntervals.pdf 
+  204  git add runTrack/binsVelocity.pdf 
+  205  git status
+  206  git add runTrack/lookUp.pdf 
+  207  git add runTrack/motionData.pdf 
+  208  git add runTrack/rawData.pdf 
+  209  git status
+  210  git commit 
+  211  git status
+  212  git push
+  213  cd ..
+  214  cd MAP/
+  215  git status
+  216  git commit -am "added dat 694.75(2)"
+  217  git push
+  218  git status
+  219  git add -A
+  220  git commit -am "improved illustrative plots"
+  221  git push
+  222  pip install -U setuptools
+  223  git status
+  224  git add -A
+  225  git commit -am "ouput plots to svg, pruning"
+  226  git push
+  227  git status
+  228  git add -A
+  229  git commit -am "raw image output for teerhof done"
+  230  git push
+  231  git status
+  232  git add -A
+  233  git commit -am "improved font sizes"
+  234  git push
+  235  cd Research/
+  236  cd MAP/
+  237  git pull
+  238  git status
+  239  git add -A
+  240  git commit -am "posterEGU layout set"
+  241  git push
+  242  GET /release-group/38b4c840-16ce-40fa-b7c0-a354b7c87178/front HTTP/1.1
+  243  ssh dan@46.101.235.68
+  244  cat ~/.ssh/id_rsa.pub
+  245  ssh dan@46.101.235.68
+  246  git status
+  247  git add -A
+  248  git commit -am "improved figs for Poster"
+  249  git push
+  250  git status
+  251  git add -A
+  252  git commit -am "replicate data over 2 studies"
+  253  git push
+  254  cd ..
+  255  cd Exposure/
+  256  git status
+  257  git add -A
+  258  git commit -am "export of replication data"
+  259  git push
+  260  git status
+  261  cd ..
+  262  cd MAP/
+  263  git status
+  264  git add -A
+  265  git commit -am "transparency issues when embedding fonts, default viewer macOS"
+  266  git push
+  267  git status
+  268  git commit -am "transparency fail in pdf:open in Ink and is fine"
+  269  gitpush
+  270  git push
+  271  git status
+  272  git commit -am "adjusted layering in ggplots to default"
+  273  git push
+  274  sudo port -v selfupdate
+  275  sudo port upgrade outdated
+  276  brew update
+  277  brew outdated
+  278  brew upgrade
+  279  git status
+  280  git add -A
+  281  git commit -am "renamed specs, clean folders"
+  282  git push
+  283  git status
+  284  git add -A
+  285  git commit -am "joining count dat from Cap"
+  286  git push
+  287  cd ..
+  288  cd Exposure/
+  289  git status
+  290  git add -A
+  291  git commit -am "fixed export of count dat"
+  292  git push
+  293  git status
+  294  git add -A
+  295  git commit -am "improved export to replication script"
+  296  git push
+  297  cd ..
+  298  cd MAP/
+  299  git status
+  300  git add -A
+  301  git commit -am "final EGU poster to be checked"
+  302  git push
+  303  git status
+  304  git add -A
+  305  git commit -am "poster to drucker"
+  306  git push
+  307  git status
+  308  git status
+  309  git commit -am "ran AAP added slide"
+  310  git push
+  311  cd ..
+  312  cd codeSnippets/
+  313  git status
+  314  git add -A
+  315  git commit -am "packing circles - nice Viz"
+  316  git push
+  317  sudo port -v selfupdate
+  318  port upgrade outdated
+  319  sudo port upgrade outdated
+  320  GET 
+  321  macports
+  322  port
+  323  cd ..
+  324  cd MAP/
+  325  git status
+  326  git add -A
+  327  git commit "nice circle plot output"
+  328  git commit -am  "nice circle plot output"
+  329  git push
+  330  git status
+  331  git add -A
+  332  git commit -am "need to debug circle colours"
+  333  git push
+  334  brew update
+  335  brew outdated
+  336  brew upgrade
+  337  git status
+  338  git commit -am "fixed colour assg circles"
+  339  git push
+  340  git status
+  341  git add -A
+  342  git commit -am "circles compare"
+  343  git push
+  344  sudo port install grass7
+  345  grass7
+  346  grass
+  347  port grass7
+  348  port grass
+  349  grass
+  350  cd .. 
+  351  ssh root@46.101.235.68
+  352  cd MAP/
+  353  git status
+  354  cd ..
+  355  cd codeSnippets/
+  356  git status
+  357  git commit -am "pack circles exam"
+  358  git push
+  359  cd ..
+  360  cd bigData/
+  361  git status
+  362  cd ..
+  363  ssh root@46.101.235.68
+  364  ssh dan@46.101.235.68
+  365  cd MAP/
+  366  git status
+  367  git commit -am "added 12.75(2)"
+  368  git push
+  369  cd ..
+  370  sudo R CMD javareconf
+  371  cd ..
+  372  cd ..
+  373  cd ..
+  374  cd ..
+  375  java -version
+  376  sudo R CMD javareconf -n
+  377  sudo R CMD javareconf
+  378  sudo R CMD javareconf
+  379  sudo R CMD javareconf
+  380  sudo ln -f -s $(/usr/libexec/java_home)/jre/lib/server/libjvm.dylib /usr/local/lib
+  381  cd Research/
+  382  cd MAP/
+  383  git status
+  384  cd ..
+  385  cd cvCells/
+  386  git status
+  387  git add -A
+  388  git commit -am "added ref ideas"
+  389  git push
+  390  cd ..
+  391  cd Exposure/
+  392  git status
+  393  git commit -am "more edits to reviews comments"
+  394  git push
+  395  git status
+  396  git commit -am "added proposed changes to reviewersComments.odt, imprv O2profiles.vsz"
+  397  git push
+  398  git status
+  399  cd ..
+  400  cd cvCells/
+  401  git status
+  402  cd ..
+  403  cd ROAM/
+  404  git status
+  405  git add -A
+  406  git commit -am "processing tiles in R"
+  407  git push
+  408  cd ..
+  409  cd klim
+  410  cd klimDWD/
+  411  git status
+  412  cd ..
+  413  cd bigData/
+  414  git status
+  415  git push
+  416  cd ..
+  417  cd codeSnippets/
+  418  git status
+  419  git push
+  420  cd ..
+  421  cd cvCells/
+  422  git status
+  423  cd ..
+  424  cd Discovery/
+  425  git status
+  426  git add -A
+  427  git commit -am "clear to GH from Mac"
+  428  git push
+  429  cd ..
+  430  cd DSOTM-RSA.github.io/
+  431  git status
+  432  cd ..
+  433  cd Exposure/
+  434  git status
+  435  cd ..
+  436  cd klim
+  437  cd klimDWD/
+  438  git status
+  439  cd ..
+  440  cd MAP/
+  441  git status
+  442  cd ..
+  443  cd ROAM/
+  444  git status
+  445  cd ..
+  446  cd shiny-server/
+  447  git status
+  448  cd ..
+  449  cd tithenai/
+  450  git status
+  451  git add -A
+  452  git commit -am "Mac to GH"
+  453  git push
+  454  cd ..
+  455  cd webApps/
+  456  git status
+  457  cd ..
+  458  cd workShop/
+  459  git status
+  460  git add -A
+  461  git commit -am "Mac to GH"
+  462  git push
+  463  cd ..
+  464  cd ..
+  465  cd Desktop/
+  466  cd resize/
+  467  mogrify -resize 50% *.jpg
+  468  mogrify -resize 50% *.JPG
+  469  mogrify -format png *.JPG
+  470  cd ..
+  471  cd resize3
+  472  cd resize3
+  473  mogrify -gravity Center -crop 100x100+0+0 +repage *.png
+  474  mogrify -gravity Center -crop 100x100+0+0 +repage *.JPG
+  475  cd ..
+  476  cd ..
+  477  cd Desktop/
+  478  cd cop/
+  479  mogrify -gravity south -chop 0x150 *.JPG
+  480  mogrify -gravity south -chop 150x0 *.JPG
+  481  cd ..
+  482  cd resize3
+  483  mogrify -convert IMG_0433.JPG -resize 481x864^ -gravity Center -crop 481x864+0+0 +repage myThumb.JPG 
+  484  convert IMG_0433.JPG -resize 481x864^ -gravity Center -crop 481x864+0+0 +repage myThumb.JPG 
+  485  convert IMG_0433.JPG -resize 864x481^ -gravity Center -crop 864x481 +0+0 +repage myThumb2.JPG 
+  486  convert IMG_0433.JPG -resize 864x481^ -gravity Center -crop 864x481+0+0 +repage myThumb2.JPG 
+  487  convert IMG_0433.JPG -resize 864x481^ -gravity Center -crop 500x400+0+0 +repage myThumb3.JPG 
+  488  mogrify -resize 864x481^ -gravity Center -crop 500x400+0+0 +repage *.JPG
+  489  cd Research/
+  490  cd Exposure/
+  491  git status
+  492  git status
+  493  git status
+  494  git add -A
+  495  git commit -am "received detailed comments R1, working on cm-Edits.odt for changes"
+  496  git push
+  497  git status
+  498  git add -A
+  499  git commit -am "working through R1 comments, --Results"
+  500  git push
+  501  cd ..
+  502  cd ..
+  503  cd Desktop/
+  504  cd Fotosmayo2017/
+  505  ls
+  506  mogrify -resize 864x481^ -gravity Center -crop 500x400+0+0 +repage *.JPG
+  507  cd ..
+  508  cd ..
+  509  cd Research/
+  510  cd Exposure/
+  511  git status
+  512  git add -A
+  513  git commit -am "minor changes cont..."
+  514  git push
+  515  cd ..
+  516  cd ..
+  517  cd Desktop/
+  518  cd Fotosmayo2017/
+  519  convert -trim IMG_0447.JPG img.JPG
+  520  convert IMG_447.JPG -fuzz "1%" -trim +repage im2.JPG
+  521  convert IMG_0447.JPG -fuzz "1%" -trim +repage im2.JPG
+  522  convert IMG_0447.JPG -shave 5x5 -fuzz 4% -trim +repage trimmed.JPG
+  523  convert IMG_0447.JPG -shave 5x5 -fuzz 24% -trim +repage trimmed.JPG
+  524  convert IMG_0447.JPG -shave 5x5 -fuzz 20% -trim +repage trimmed.JPG
+  525  convert IMG_0447.JPG -shave 5x5 -fuzz 15% -trim +repage trimmed.JPG
+  526  convert IMG_0486.JPG -shave 5x5 -fuzz 15% -trim +repage trimmed2.JPG
+  527  convert IMG_0486.JPG -shave 5x5 -fuzz 10% -trim +repage trimmed2.JPG
+  528  convert IMG_0486.JPG -shave 15x55 -fuzz 10% -trim +repage trimmed2.JPG
+  529  convert IMG_0486.JPG -shave 55x55 -fuzz 10% -trim +repage trimmed2.JPG
+  530  convert IMG_0486.JPG -shave 10x10 -fuzz 10% -trim +repage trimmed2.JPG
+  531  convert IMG_0486.JPG -shave 5x5 -fuzz 10% -trim +repage trimmed2.JPG
+  532  convert IMG_0486.JPG -shave 15x5 -fuzz 10% -trim +repage trimmed2.JPG
+  533  convert IMG_0486.JPG -shave 5x15 -fuzz 10% -trim +repage trimmed2.JPG
+  534  convert IMG_0486.JPG -shave 15x15 -fuzz 10% -trim +repage trimmed2.JPG
+  535  convert IMG_0486.JPG -shave 5x5 -fuzz 10% -trim +repage trimmed2.JPG
+  536  convert trimmed2.JPG -resize 128x128^ -gravity center -extent 128x128 fill_trimmed2.JPG
+  537  convert trimmed.JPG -resize 128x128^ -gravity center -extent 128x128 fill_trimmed.JPG
+  538  convert trimmed.JPG -resize 128x128^ fiil_resize.JPG
+  539  convert trimmed.JPG -resize 128x128^ -extent 128x128 fill_trimmed_nC.JPG
+  540  convert trimmed2.JPG -resize 128x128^\! trim_FAR.JPG
+  541  convert IMG_0486.JPG -shave 5x5 -fuzz 1% -trim +repage trim_1.JPG
+  542  convert IMG_0486.JPG -shave 5x5 -fuzz 5% -trim +repage trim_5.JPG
+  543  convert IMG_0486.JPG -shave 255x255 -fuzz 10% -trim +repage trim_255.JPG
+  544  convert IMG_0486.JPG -shave 1x0 -fuzz 10% -trim +repage trim_255.JPG
+  545  convert IMG_0483.JPG -shave 5x5 -fuzz 10% -trim +repage trimmed3.JPG
+  546  convert IMG_0483.JPG -shave 5x5 -fuzz 15% -trim +repage trimmed3.JPG
+  547  convert IMG_0483.JPG -shave 5x5 -fuzz 12% -trim +repage trimmed3.JPG
+  548  convert IMG_0483.JPG -shave 5x5 -fuzz 13% -trim +repage trimmed3.JPG
+  549  convert IMG_0483.JPG -shave 5x5 -fuzz 11% -trim +repage trimmed3.JPG
+  550  convert IMG_0483.JPG -shave 5x5 -fuzz 10% -trim +repage trimmed3.JPG
+  551  convert IMG_0483.JPG -shave 5x5 -fuzz 10.5% -trim +repage trimmed3.JPG
+  552  convert IMG_0483.JPG -shave 50x50 -fuzz 10% -trim +repage trimmed3.JPG
+  553  convert IMG_0483.JPG -crop 1x1-10-10@ trimmed3_ptiled.JPG
+  554  convert IMG_0483.JPG -crop 1x1-20-20@ trimmed3_ptiled.JPG
+  555  convert IMG_0483.JPG -crop 1x1-120-120@ trimmed3_ptiled.JPG
+  556  convert IMG_0483.JPG -shave 50x50 -fuzz 10% -trim +repage trimmed3.JPG
+  557  convert IMG_0483.JPG -shave 250x350 -fuzz 10% -trim +repage trimmed3.JPG
+  558  convert IMG_0483.JPG -shave 20x20 -fuzz 10% -trim +repage trimmed3.JPG
+  559  convert IMG_0483.JPG -fuzz 10% -trim +repage trimmed3.JPG
+  560  convert IMG_0483.JPG -shave 20x20 -fuzz 10% -trim +repage trimmed4.JPG
+  561  cd .. 
+  562  cd ..
+  563  cd Research/
+  564  cd cvCells/
+  565  cd macro-tests
+  566  cd tests-Crop-Trim/
+  567  convert 04-g-bspp.tif -shave 20x20 -fuzz 10% -trim +repage 04-g-bspp-trim.JPG
+  568  convert 04-g-bspp.tif -shave 20x20 -fuzz 5% -trim +repage 04-g-bspp-trim.JPG
+  569  convert 04-g-bspp.tif -shave 2x2 -fuzz 5% -trim +repage 04-g-bspp-trim.JPG
+  570  convert 04-g-bspp.tif -shave 2x2 -fuzz 8% -trim +repage 04-g-bspp-trim.JPG
+  571  convert 05-g-bspp.tif -shave 2x2 -fuzz 8% -trim +repage 05-g-bspp-trim.JPG
+  572  convert 04-g-bspp-trim.JPG -resize 128x128^\! trim_1.JPG
+  573  convert 04-g-bspp-trim.JPG -resize 220x220^\! trim_1b.JPG
+  574  convert 04-g-bspp-trim.JPG -resize 220x220^ -extent 220x220 trim_1nC.JPG
+  575  convert 05-g-bspp-trim.JPG -resize 220x220^\! trim_2b.JPG
+  576  convert 05-g-bspp-trim.JPG -resize 220x220^ -extent 220x220 trim_2nC.JPG
+  577  convert 04-g-bspp.tif -shave 20x20 -fuzz 5% -trim -gravity Center +repage 04-g-bspp-trimGC.JPG
+  578  convert 04-g-bspp.tif -shave 20x20 -fuzz 5% -gravity Center -trim +repage 04-g-bspp-trimGC.JPG
+  579  convert 05-g-bspp-trim.JPG -resize 200x216^ -extent 200x216 trim_2RR.JPG
+  580  convert 04-g-bspp-trim.JPG -resize 200x216^ -extent 200x216 trim_1RR.JPG
+  581  history > cmdline-history.txt
