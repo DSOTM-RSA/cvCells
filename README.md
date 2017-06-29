@@ -19,7 +19,7 @@ Ideas (grow training set)
 Ideas (machine learning approaches)
 
 - mxnet
-- MCTK 
+- CNTK 
 
 
 
